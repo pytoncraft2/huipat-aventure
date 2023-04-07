@@ -5,7 +5,7 @@
         "exportClass": true,
         "autoImport": true,
         "preloadPackFiles": [],
-        "createMethodName": "editorCreate",
+        "createMethodName": "go",
         "compilerOutputLanguage": "TYPE_SCRIPT",
         "borderWidth": 1920,
         "borderHeight": 1080
@@ -25,20 +25,43 @@
             "y": 17,
             "nestedPrefabs": [],
             "list": []
+        },
+        {
+            "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
+            "id": "2ec6130e-8b91-4782-936d-c2b9a9c56c6c",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "entite",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": 387,
+            "y": 383
+        },
+        {
+            "type": "Layer",
+            "id": "d206d505-8e01-4632-ae55-d98add2df831",
+            "label": "platformes",
+            "scope": "PUBLIC",
+            "components": [],
+            "list": []
         }
     ],
-    "plainObjects": [],
+    "plainObjects": [
+        {
+            "id": "18ec6a5a-8c5c-4ef8-b868-5477167b8a55",
+            "type": "Collider",
+            "label": "collider",
+            "scope": "PUBLIC",
+            "object1": "platformes.list",
+            "object2": "entite"
+        }
+    ],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    },
-    "lists": [
-        {
-            "id": "6cd074e3-0c8c-4061-8db8-f47acd20a580",
-            "label": "liste_colision_platforme",
-            "scope": "PUBLIC"
-        }
-    ]
+    }
 }

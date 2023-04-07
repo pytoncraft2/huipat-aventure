@@ -29,18 +29,6 @@
             "y": 439
         },
         {
-            "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-            "id": "146c7581-d422-4498-be3a-8196f23c124e",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "entité",
-            "components": [],
-            "x": 960,
-            "y": 200
-        },
-        {
             "type": "Text",
             "id": "f19a977e-5c17-4f3d-9068-9ee52e93066c",
             "label": "tuto",
@@ -55,141 +43,46 @@
             "color": "#000000ff"
         },
         {
-            "type": "Container",
-            "id": "3b05b225-a617-4790-a424-a756adf544cf",
-            "label": "platformes_niveau_3",
+            "type": "Layer",
+            "id": "310cfe5c-0ca8-4b13-badd-761fa9a027cc",
+            "label": "platformes",
             "components": [],
-            "y": 400,
             "list": [
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "e4a06f5c-69ae-4570-8be6-618bc75f4df1",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "platformePrefab_6",
-                    "components": [],
-                    "x": 1728,
-                    "y": 0
-                },
-                {
-                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "0ad11cf1-2b87-40f6-af71-5ca4a5fd15b1",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "platformePrefab_7",
-                    "components": [],
-                    "x": 0,
-                    "y": 200
-                },
-                {
-                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "98eeb07c-f24e-4759-9737-ea0112140dc6",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "platformePrefab_8",
-                    "components": [],
-                    "x": 1728,
-                    "y": 400
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "76522e70-dbbe-427b-a02c-c09069ddaafc",
-            "label": "platformes_niveau_2",
-            "components": [],
-            "x": 960,
-            "y": 400,
-            "visible": false,
-            "list": [
-                {
-                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "5b4394f2-f966-4f07-a182-920bc771e878",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "platformePrefab_3",
-                    "components": [],
-                    "x": 0,
-                    "y": 200
-                },
-                {
-                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "f1bbb53b-5b33-4ef7-a958-1b6d2ff87a3c",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "platformePrefab_4",
-                    "components": [],
-                    "x": 0,
-                    "y": 400
-                },
-                {
-                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "c9148788-6319-490b-bd6a-d8dc31c1bc97",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "platformePrefab_5",
-                    "components": [],
-                    "x": 0,
-                    "y": 0
-                }
-            ]
-        },
-        {
-            "type": "Container",
-            "id": "81217a18-255a-4953-b899-63b9fe1f56d6",
-            "label": "platformes_niveau_1",
-            "components": [],
-            "x": 597,
-            "y": 358,
-            "visible": false,
-            "list": [
-                {
-                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "91cb2497-b923-4f91-ab69-0b7392dba58c",
+                    "id": "8d976fb4-fcda-438f-9edc-3759cb8a3851",
                     "unlock": [
                         "x",
                         "y"
                     ],
                     "label": "platformePrefab",
                     "components": [],
-                    "x": 363,
-                    "y": 242
+                    "x": 1344,
+                    "y": 400
                 },
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "86037a5f-fd94-4009-81b7-63889329f463",
+                    "id": "005a04f5-217b-494e-812a-01e853bda1f6",
                     "unlock": [
                         "x",
                         "y"
                     ],
                     "label": "platformePrefab_1",
                     "components": [],
-                    "x": 0,
-                    "y": 0
+                    "x": 768,
+                    "y": 600
                 },
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "8ea348bb-253a-4492-be15-d836de4a5df9",
+                    "id": "1efe185f-0faa-46c9-869e-c93a1fc06ea8",
                     "unlock": [
                         "x",
                         "y"
                     ],
                     "label": "platformePrefab_2",
                     "components": [],
-                    "x": 605,
-                    "y": 489
+                    "x": 1344,
+                    "y": 800
                 }
             ]
         }

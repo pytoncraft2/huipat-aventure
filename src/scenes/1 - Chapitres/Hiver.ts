@@ -3,14 +3,13 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
+import BaseJeu from "../0 - Initialisation/BaseJeu";
 import InfosScene from "../3 - Utilitaires/InfosScene";
-import Entite from "./Entite";
 import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class Hiver extends Phaser.Scene {
+export default class Hiver extends BaseJeu {
 
 	constructor() {
 		super("Hiver");
@@ -26,13 +25,16 @@ export default class Hiver extends Phaser.Scene {
 		const infosScene = new InfosScene(this, 980, 478, "fond2");
 		this.add.existing(infosScene);
 
-		// entite
-		const entite = new Entite(this, 871, 298);
-		this.add.existing(entite);
+		// platformes
+		const platformes = this.add.layer();
 
 		// platformePrefab
-		const platformePrefab = new PlatformePrefab(this, 865, 508);
-		this.add.existing(platformePrefab);
+		const platformePrefab = new PlatformePrefab(this, 1628, 626);
+		platformes.add(platformePrefab);
+
+		// platformePrefab_1
+		const platformePrefab_1 = new PlatformePrefab(this, 545, 811);
+		platformes.add(platformePrefab_1);
 
 		this.events.emit("scene-awake");
 	}

@@ -5,28 +5,40 @@
 
 import Phaser from "phaser";
 import EcranInfo from "../3 - Utilitaires/EcranInfo";
+import Entite from "../2 - Joueur & Ennemis/Entite";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
 export default class BaseJeu extends Phaser.Scene {
 
-	editorCreate(): void {
+	go(): void {
 
 		// ecranInfo
 		const ecranInfo = new EcranInfo(this, -4, 17);
 		this.add.existing(ecranInfo);
 
-		// lists
-		const liste_colision_platforme: Array<any> = [];
+		// entite
+		const entite = new Entite(this, 387, 383);
+		this.add.existing(entite);
+
+		// platformes
+		const platformes = this.add.layer();
+
+		// collider
+		const collider = this.physics.add.collider(platformes.list, entite);
 
 		this.ecranInfo = ecranInfo;
-		this.liste_colision_platforme = liste_colision_platforme;
+		this.entite = entite;
+		this.platformes = platformes;
+		this.collider = collider;
 
 		this.events.emit("scene-awake");
 	}
 
 	public ecranInfo!: EcranInfo;
-	public liste_colision_platforme!: Array<any>;
+	public entite!: Entite;
+	public platformes!: Phaser.GameObjects.Layer;
+	public collider!: Phaser.Physics.Arcade.Collider;
 
 	/* START-USER-CODE */
 
@@ -50,13 +62,22 @@ export default class BaseJeu extends Phaser.Scene {
 	}
 
 	create() {
-		this.editorCreate();
+		//this.editorCreate();
+	}
+
+	initialiseGroupesScene() {
+		this.go()
 	}
 
 	creerEcranTransitionNiveau() {
+		this.go();
+		console.log(this.ecranInfo);
+		//this.scene.events.once("scene-awake", () => console.log("OK"));
+/*
 		const ecranInfo = new EcranInfo(this, -4, 17);
 		const ecranInfoObjet = this.add.existing(ecranInfo);		
 		return ecranInfoObjet;
+		*/
 	}
 
 	ouvrirEcranTransitionNiveau() {
@@ -65,6 +86,9 @@ export default class BaseJeu extends Phaser.Scene {
 
 	fermerEcranTransitionNiveau() {
 		this.ecranInfo.fermer()
+	}
+
+	initialiseColisionEntitePlatforme() {
 	}
 
 	ecranInfoExiste() {
