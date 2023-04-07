@@ -2,9 +2,80 @@
     "section1": {
         "files": [
             {
-                "url": "assets/guapen.png",
+                "url": "assets/araigne.svg",
+                "svgConfig": {
+                    "width": 0,
+                    "height": 0,
+                    "scale": 0
+                },
+                "type": "svg",
+                "key": "araigne"
+            },
+            {
+                "url": "assets/chauve-souris.svg",
+                "svgConfig": {
+                    "width": 0,
+                    "height": 0,
+                    "scale": 0
+                },
+                "type": "svg",
+                "key": "chauve-souris"
+            },
+            {
+                "url": "assets/coeur.svg",
+                "svgConfig": {
+                    "width": 0,
+                    "height": 0,
+                    "scale": 0
+                },
+                "type": "svg",
+                "key": "coeur"
+            },
+            {
+                "url": "assets/fond.jpg",
                 "type": "image",
-                "key": "guapen"
+                "key": "fond"
+            },
+            {
+                "url": "assets/fond2.png",
+                "type": "image",
+                "key": "fond2"
+            },
+            {
+                "url": "assets/fond3.png",
+                "type": "image",
+                "key": "fond3"
+            },
+            {
+                "url": "assets/fond4.jpg",
+                "type": "image",
+                "key": "fond4"
+            },
+            {
+                "url": "assets/herbe.svg",
+                "svgConfig": {
+                    "width": 0,
+                    "height": 0,
+                    "scale": 0
+                },
+                "type": "svg",
+                "key": "herbe"
+            },
+            {
+                "url": "assets/huipat.png",
+                "type": "image",
+                "key": "huipat"
+            },
+            {
+                "atlasURL": "assets/liste_atlas.json",
+                "textureURL": "assets/liste_atlas.png",
+                "type": "atlas",
+                "key": "liste_atlas"
+            },
+            {
+                "url": "assets/toile.png",
+                "type": "image",
+                "key": "toile"
             }
         ]
     },
