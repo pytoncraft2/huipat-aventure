@@ -2,6 +2,9 @@
     "id": "78d78e28-6581-465c-8a12-4cb5e81758b3",
     "sceneType": "SCENE",
     "settings": {
+        "snapEnabled": true,
+        "snapWidth": 192,
+        "snapHeight": 200,
         "exportClass": true,
         "autoImport": true,
         "superClassName": "BaseJeu",
@@ -25,6 +28,18 @@
             "originY": 0.5,
             "text": "Tuto",
             "fontSize": "26px"
+        },
+        {
+            "prefabId": "50219a84-998c-4bbd-9ff3-7eba6c5afaaf",
+            "id": "7b87227c-129b-496f-8762-1413a078e39b",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "infosScene",
+            "components": [],
+            "x": 960,
+            "y": 439
         }
     ],
     "plainObjects": [],

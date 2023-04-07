@@ -4,6 +4,7 @@
 /* START OF COMPILED CODE */
 
 import BaseJeu from "../0 - Initialisation/BaseJeu";
+import InfosScene from "../3 - Utilitaires/InfosScene";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -24,6 +25,10 @@ export default class Tuto extends BaseJeu {
 		tuto.setOrigin(0.5, 0.5);
 		tuto.text = "Tuto";
 		tuto.setStyle({ "fontSize": "26px" });
+
+		// infosScene
+		const infosScene = new InfosScene(this, 960, 439);
+		this.add.existing(infosScene);
 
 		this.tuto = tuto;
 

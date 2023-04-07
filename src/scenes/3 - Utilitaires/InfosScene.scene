@@ -1,0 +1,44 @@
+{
+    "id": "50219a84-998c-4bbd-9ff3-7eba6c5afaaf",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "8c5a326c-74fe-4d57-89a9-7cc7920c8ac9",
+            "label": "fond",
+            "components": [],
+            "texture": {
+                "key": "fond"
+            }
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    },
+    "prefabProperties": [
+        {
+            "name": "nombreEnnemieAVaincre",
+            "label": "nombre ennemie à vaincre",
+            "tooltip": "Nombre d'ennemie à vaincre pour pourvoir passer au niveau suivant",
+            "defValue": 0,
+            "customDefinition": false,
+            "type": {
+                "id": "number"
+            }
+        }
+    ]
+}
