@@ -1,0 +1,32 @@
+{
+    "id": "e376be1f-459b-4fb9-a039-fbed3de4c234",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT"
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "e717545a-1049-4b2a-b7dd-fac1c8749ac1",
+            "label": "fufuSuperDino",
+            "components": [
+                "PushOnClick"
+            ],
+            "texture": {
+                "key": "FufuSuperDino"
+            }
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

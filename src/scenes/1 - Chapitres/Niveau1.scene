@@ -1,0 +1,34 @@
+{
+    "id": "d41d0d2a-dac3-4454-9c7d-90df7d40e62f",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "superClassName": "BaseJeu",
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "SceneMain",
+        "compilerOutputLanguage": "TYPE_SCRIPT"
+    },
+    "displayList": [
+        {
+            "type": "Text",
+            "id": "b71bb7aa-371e-424b-8598-b597b43ea237",
+            "label": "text_1",
+            "components": [],
+            "x": 400,
+            "y": 300,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Niveau 1",
+            "fontSize": "26px"
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
