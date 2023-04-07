@@ -4,6 +4,7 @@
     "settings": {
         "exportClass": true,
         "autoImport": true,
+        "superClassName": "Phaser.Scene",
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
         "compilerOutputLanguage": "TYPE_SCRIPT",
@@ -33,5 +34,12 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    }
+    },
+    "lists": [
+        {
+            "id": "6cd074e3-0c8c-4061-8db8-f47acd20a580",
+            "label": "liste_colision_platforme",
+            "scope": "PUBLIC"
+        }
+    ]
 }

@@ -16,22 +16,41 @@ export default class BaseJeu extends Phaser.Scene {
 		const ecranInfo = new EcranInfo(this, -4, 17);
 		this.add.existing(ecranInfo);
 
+		// lists
+		const liste_colision_platforme: Array<any> = [];
+
 		this.ecranInfo = ecranInfo;
+		this.liste_colision_platforme = liste_colision_platforme;
 
 		this.events.emit("scene-awake");
 	}
 
 	public ecranInfo!: EcranInfo;
+	public liste_colision_platforme!: Array<any>;
 
 	/* START-USER-CODE */
 
 	// Write your code here
+	constructor(key: any) {
+		super(key)
+		console.log("??");
+		//@ts-ignore
+		this.scene?.events?.once("scene-awake", () => console.log("OK"));
+
+		// const ecranInfo = new EcranInfo(this, -4, 17);
+		// this.add.existing(ecranInfo);
+
+		// // lists
+		// const liste_colision_platforme: Array<any> = [];
+
+		// this.ecranInfo = ecranInfo;
+		// this.liste_colision_platforme = liste_colision_platforme;
+		
+		
+	}
 
 	create() {
-
 		this.editorCreate();
-		console.log("ZZZZZZZZZZ: ", this.ecranInfo);
-		
 	}
 
 	creerEcranTransitionNiveau() {

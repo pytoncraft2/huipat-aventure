@@ -40,6 +40,20 @@
             "components": [],
             "x": 960,
             "y": 439
+        },
+        {
+            "type": "Image",
+            "id": "146c7581-d422-4498-be3a-8196f23c124e",
+            "label": "huipat_atlas_png",
+            "components": [
+                "ListeColisionPlatforme"
+            ],
+            "texture": {
+                "key": "liste_atlas",
+                "frame": "huipat_atlas.png"
+            },
+            "x": 960,
+            "y": 600
         }
     ],
     "plainObjects": [],
