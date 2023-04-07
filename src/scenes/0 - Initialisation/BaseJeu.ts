@@ -34,10 +34,22 @@ export default class BaseJeu extends Phaser.Scene {
 		
 	}
 
-	testExtendBaseJeu() {
-		console.log(this.ecranInfo);
-		
-		console.log("Base Jeu extended");
+	creerEcranTransitionNiveau() {
+		const ecranInfo = new EcranInfo(this, -4, 17);
+		const ecranInfoObjet = this.add.existing(ecranInfo);		
+		return ecranInfoObjet;
+	}
+
+	ouvrirEcranTransitionNiveau() {
+		this.ecranInfo.ouvrir()
+	}
+
+	fermerEcranTransitionNiveau() {
+		this.ecranInfo.fermer()
+	}
+
+	ecranInfoExiste() {
+		return this.ecranInfo;
 	}
 
 	/* END-USER-CODE */

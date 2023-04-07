@@ -38,7 +38,6 @@ export default class EcranInfo extends Phaser.GameObjects.Container {
 		this.texteNiveau = texteNiveau;
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
@@ -56,12 +55,13 @@ export default class EcranInfo extends Phaser.GameObjects.Container {
 			duration: 600
 		})
 	}
-	fermer() {
+	fermer(callback: CallableFunction = Function()) {
 		this.scene.tweens.add({
 			targets: [this.fondNoir, this.texteNiveau],
+			delay: 800,
 			alpha: 0,
 			duration: 900,
-			onComplete: () => {/*this.destroy(true)*/}
+			onComplete: () => callback()
 		})
 	}
 	/* END-USER-CODE */
