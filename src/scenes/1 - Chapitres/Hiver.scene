@@ -27,6 +27,30 @@
             },
             "x": 980,
             "y": 478
+        },
+        {
+            "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
+            "id": "d1e46f2e-d39f-4ceb-aecc-4268249175c0",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "entite",
+            "components": [],
+            "x": 871,
+            "y": 298
+        },
+        {
+            "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
+            "id": "e52834ee-8ef3-4f53-870d-78fe453d6507",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "platformePrefab",
+            "components": [],
+            "x": 865,
+            "y": 508
         }
     ],
     "plainObjects": [],
