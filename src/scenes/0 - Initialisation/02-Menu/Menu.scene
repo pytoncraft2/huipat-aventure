@@ -1,27 +1,78 @@
 {
-    "id": "bc2274bb-0f47-4c1c-aa0f-298edba5339b",
+    "id": "b685c081-ee5f-4b67-b583-415922c9e2c4",
     "sceneType": "SCENE",
     "settings": {
+        "snapWidth": 128,
+        "snapHeight": 128,
         "exportClass": true,
         "autoImport": true,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
         "sceneKey": "Menu",
-        "compilerOutputLanguage": "TYPE_SCRIPT"
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1920,
+        "borderHeight": 1080
     },
     "displayList": [
         {
-            "type": "Text",
-            "id": "44b26b40-27bc-4a0f-82b7-d00fb9d20da9",
-            "label": "jouer",
-            "scope": "PUBLIC",
+            "type": "Rectangle",
+            "id": "daf32685-5ec2-4a0e-8fe9-865bb804a3c2",
+            "label": "rectangle_2",
             "components": [],
-            "x": 400,
-            "y": 300,
+            "x": 960,
+            "y": 400,
+            "scaleX": 2.579608498064135,
+            "scaleY": 0.05439157547258821,
+            "isFilled": true,
+            "fillColor": "7BC624",
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Text",
+            "id": "1e7b541c-23ed-4f9d-a3b0-90a8b3517575",
+            "label": "text_2",
+            "components": [],
+            "x": 960,
+            "y": 375,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Jouer",
-            "fontSize": "26px"
+            "text": "Huipat Aventure",
+            "fontFamily": "Open Sans",
+            "fontSize": "46px",
+            "fontStyle": "bold",
+            "color": "#000000ff"
+        },
+        {
+            "type": "Text",
+            "id": "00c251bc-4033-41de-a4fc-df609a959d37",
+            "label": "text_1",
+            "components": [],
+            "x": 960,
+            "y": 729,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Des insectes se sont emparés des matériaux de la tente !\n\nRetrouver les matériaux dans les 10 niveaux.\n\nCertain insectes peuvent vous transmettre de nouvelle capacités une fois vaincu !",
+            "align": "center",
+            "fontFamily": "Open Sans",
+            "fontSize": "24px",
+            "color": "#7b7b7bff"
+        },
+        {
+            "prefabId": "ee834f89-44c1-4af7-951e-237dab5cac67",
+            "id": "d43cc623-754e-4071-9caa-2a1003bca5cd",
+            "unlock": [
+                "x",
+                "y",
+                "CommencerSceneAuClique.sceneKey"
+            ],
+            "label": "bouton",
+            "components": [
+                "InteractiveObjet",
+                "CommencerSceneAuClique"
+            ],
+            "x": 960,
+            "y": 540
         }
     ],
     "plainObjects": [],

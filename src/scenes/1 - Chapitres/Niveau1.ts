@@ -20,7 +20,7 @@ export default class Niveau1 extends BaseJeu {
 	editorCreate(): void {
 
 		// text_1
-		const text_1 = this.add.text(400, 300, "", {});
+		const text_1 = this.add.text(960, 540, "", {});
 		text_1.setOrigin(0.5, 0.5);
 		text_1.text = "Niveau 1";
 		text_1.setStyle({ "fontSize": "26px" });

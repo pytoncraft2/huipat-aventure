@@ -20,7 +20,7 @@ export default class Tuto extends BaseJeu {
 	editorCreate(): void {
 
 		// tuto
-		const tuto = this.add.text(400, 300, "", {});
+		const tuto = this.add.text(960, 540, "", {});
 		tuto.setOrigin(0.5, 0.5);
 		tuto.text = "Tuto";
 		tuto.setStyle({ "fontSize": "26px" });

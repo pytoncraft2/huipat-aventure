@@ -8,7 +8,9 @@
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
         "sceneKey": "SceneMain",
-        "compilerOutputLanguage": "TYPE_SCRIPT"
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1920,
+        "borderHeight": 1080
     },
     "displayList": [
         {
@@ -16,8 +18,8 @@
             "id": "b71bb7aa-371e-424b-8598-b597b43ea237",
             "label": "text_1",
             "components": [],
-            "x": 400,
-            "y": 300,
+            "x": 960,
+            "y": 540,
             "originX": 0.5,
             "originY": 0.5,
             "text": "Niveau 1",

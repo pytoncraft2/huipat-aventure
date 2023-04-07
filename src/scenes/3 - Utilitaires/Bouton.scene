@@ -1,13 +1,12 @@
 {
-    "id": "78d78e28-6581-465c-8a12-4cb5e81758b3",
-    "sceneType": "SCENE",
+    "id": "ee834f89-44c1-4af7-951e-237dab5cac67",
+    "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
         "autoImport": true,
-        "superClassName": "BaseJeu",
+        "preloadMethodName": "",
         "preloadPackFiles": [],
-        "createMethodName": "editorCreate",
-        "sceneKey": "Tuto",
+        "createMethodName": "",
         "compilerOutputLanguage": "TYPE_SCRIPT",
         "borderWidth": 1920,
         "borderHeight": 1080
@@ -15,16 +14,22 @@
     "displayList": [
         {
             "type": "Text",
-            "id": "f19a977e-5c17-4f3d-9068-9ee52e93066c",
-            "label": "tuto",
-            "scope": "PUBLIC",
+            "id": "236171e3-f03d-4576-83c5-d512d2fef0c0",
+            "label": "text_1",
             "components": [],
-            "x": 960,
-            "y": 540,
+            "x": 408,
+            "y": 100,
             "originX": 0.5,
             "originY": 0.5,
-            "text": "Tuto",
-            "fontSize": "26px"
+            "text": "Jouer",
+            "paddingLeft": 150,
+            "paddingTop": 30,
+            "paddingRight": 150,
+            "paddingBottom": 30,
+            "fontFamily": "Open Sans",
+            "fontSize": "35px",
+            "fontStyle": "bold italic",
+            "backgroundColor": "#006699"
         }
     ],
     "plainObjects": [],

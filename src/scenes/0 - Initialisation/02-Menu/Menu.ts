@@ -4,6 +4,9 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
+import Bouton from "../../3 - Utilitaires/Bouton";
+import InteractiveObjet from "../../../components/InteractiveObjet";
+import CommencerSceneAuClique from "../../../components/CommencerSceneAuClique";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -19,18 +22,35 @@ export default class Menu extends Phaser.Scene {
 
 	editorCreate(): void {
 
-		// jouer
-		const jouer = this.add.text(400, 300, "", {});
-		jouer.setOrigin(0.5, 0.5);
-		jouer.text = "Jouer";
-		jouer.setStyle({ "fontSize": "26px" });
+		// rectangle_2
+		const rectangle_2 = this.add.rectangle(960, 400, 128, 128);
+		rectangle_2.scaleX = 2.579608498064135;
+		rectangle_2.scaleY = 0.05439157547258821;
+		rectangle_2.isFilled = true;
+		rectangle_2.fillColor = 8111652;
 
-		this.jouer = jouer;
+		// text_2
+		const text_2 = this.add.text(960, 375, "", {});
+		text_2.setOrigin(0.5, 0.5);
+		text_2.text = "Huipat Aventure";
+		text_2.setStyle({ "color": "#000000ff", "fontFamily": "Open Sans", "fontSize": "46px", "fontStyle": "bold" });
+
+		// text_1
+		const text_1 = this.add.text(960, 729, "", {});
+		text_1.setOrigin(0.5, 0.5);
+		text_1.text = "Des insectes se sont emparés des matériaux de la tente !\n\nRetrouver les matériaux dans les 10 niveaux.\n\nCertain insectes peuvent vous transmettre de nouvelle capacités une fois vaincu !";
+		text_1.setStyle({ "align": "center", "color": "#7b7b7bff", "fontFamily": "Open Sans", "fontSize": "24px" });
+
+		// bouton
+		const bouton = new Bouton(this, 960, 540);
+		this.add.existing(bouton);
+
+		// bouton (components)
+		new InteractiveObjet(bouton);
+		new CommencerSceneAuClique(bouton);
 
 		this.events.emit("scene-awake");
 	}
-
-	public jouer!: Phaser.GameObjects.Text;
 
 	/* START-USER-CODE */
 
@@ -39,9 +59,6 @@ export default class Menu extends Phaser.Scene {
 	create() {
 
 		this.editorCreate();
-		this.jouer
-			.setInteractive()
-			.on('pointerdown', () => this.scene.start('Tuto'));
 	}
 
 	/* END-USER-CODE */
