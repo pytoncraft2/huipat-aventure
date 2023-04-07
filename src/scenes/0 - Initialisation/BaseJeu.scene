@@ -6,9 +6,27 @@
         "autoImport": true,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
-        "compilerOutputLanguage": "TYPE_SCRIPT"
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 1920,
+        "borderHeight": 1080
     },
-    "displayList": [],
+    "displayList": [
+        {
+            "prefabId": "1f129a30-e7dc-4335-aa9f-c65e2d324b34",
+            "id": "80bacbed-268b-40ca-85da-ea271eb6a91e",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "ecranInfo",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": -4,
+            "y": 17,
+            "nestedPrefabs": [],
+            "list": []
+        }
+    ],
     "plainObjects": [],
     "meta": {
         "app": "Phaser Editor 2D - Scene Editor",

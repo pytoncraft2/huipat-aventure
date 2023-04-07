@@ -47,7 +47,7 @@ export default class Tuto extends BaseJeu {
 		this.tuto
 			.setInteractive()
 			.on('pointerdown', () => this.scene.start('SceneMain'));
-		this.testExtendBaseJeu()
+	console.log(this.testExtendBaseJeu());
 	}
 
 	/* END-USER-CODE */
