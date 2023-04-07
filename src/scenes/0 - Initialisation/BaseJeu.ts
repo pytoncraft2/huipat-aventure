@@ -45,8 +45,8 @@ export default class BaseJeu extends Phaser.Scene {
 
 		// this.ecranInfo = ecranInfo;
 		// this.liste_colision_platforme = liste_colision_platforme;
-		
-		
+
+
 	}
 
 	create() {

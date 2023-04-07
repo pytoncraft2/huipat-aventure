@@ -1,30 +1,32 @@
 {
-    "id": "0c17befc-95f1-4471-b0ec-78af59b55217",
+    "id": "20702b52-a9bc-4b38-af4c-636e810bb0ce",
     "sceneType": "SCENE",
     "settings": {
         "exportClass": true,
         "autoImport": true,
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
+        "sceneKey": "Hiver",
         "compilerOutputLanguage": "TYPE_SCRIPT",
         "borderWidth": 1920,
         "borderHeight": 1080
     },
     "displayList": [
         {
-            "prefabId": "1f129a30-e7dc-4335-aa9f-c65e2d324b34",
-            "id": "80bacbed-268b-40ca-85da-ea271eb6a91e",
+            "prefabId": "50219a84-998c-4bbd-9ff3-7eba6c5afaaf",
+            "id": "58d0cad8-0d80-4611-835f-10e87b523411",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "texture"
             ],
-            "label": "ecranInfo",
-            "scope": "PUBLIC",
+            "label": "infosScene",
             "components": [],
-            "x": -4,
-            "y": 17,
-            "nestedPrefabs": [],
-            "list": []
+            "texture": {
+                "key": "fond2"
+            },
+            "x": 980,
+            "y": 478
         }
     ],
     "plainObjects": [],
@@ -33,12 +35,5 @@
         "url": "https://phasereditor2d.com",
         "contentType": "phasereditor2d.core.scene.SceneContentType",
         "version": 3
-    },
-    "lists": [
-        {
-            "id": "6cd074e3-0c8c-4061-8db8-f47acd20a580",
-            "label": "liste_colision_platforme",
-            "scope": "PUBLIC"
-        }
-    ]
+    }
 }
