@@ -20,7 +20,10 @@
             "texture": {
                 "key": "liste_atlas",
                 "frame": "huipat_atlas.png"
-            }
+            },
+            "ArcadeComponent.active": true,
+            "body.width": 200,
+            "body.height": 189
         }
     ],
     "plainObjects": [],

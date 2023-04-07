@@ -42,19 +42,32 @@
         {
             "type": "Layer",
             "id": "d206d505-8e01-4632-ae55-d98add2df831",
-            "label": "platformes",
+            "label": "liste_platformes",
             "scope": "PUBLIC",
             "components": [],
-            "list": []
+            "list": [
+                {
+                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
+                    "id": "642c47be-22c5-4449-9b4a-607437b060d7",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "platformePrefab",
+                    "components": [],
+                    "x": 869,
+                    "y": 667
+                }
+            ]
         }
     ],
     "plainObjects": [
         {
             "id": "18ec6a5a-8c5c-4ef8-b868-5477167b8a55",
             "type": "Collider",
-            "label": "collider",
+            "label": "colision_platformes_entites",
             "scope": "PUBLIC",
-            "object1": "platformes.list",
+            "object1": "liste_platformes.list",
             "object2": "entite"
         }
     ],

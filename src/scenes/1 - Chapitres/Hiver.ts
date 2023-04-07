@@ -36,8 +36,12 @@ export default class Hiver extends BaseJeu {
 		const platformePrefab_1 = new PlatformePrefab(this, 545, 811);
 		platformes.add(platformePrefab_1);
 
+		this.platformes = platformes;
+
 		this.events.emit("scene-awake");
 	}
+
+	public platformes!: Phaser.GameObjects.Layer;
 
 	/* START-USER-CODE */
 
@@ -46,6 +50,12 @@ export default class Hiver extends BaseJeu {
 	create() {
 
 		this.editorCreate();
+			this.go();
+			this.fermerEcranTransitionNiveau();
+//		this.colision_detecteur_remplie.object2 = [...(this.scene as any).platformesLayer.list, ...(this.scene as any).platformesLayer_2.list];
+this.liste_platformes.destroy();
+this.colision_platformes_entites.object1 = this.platformes.list;
+
 	}
 
 	/* END-USER-CODE */

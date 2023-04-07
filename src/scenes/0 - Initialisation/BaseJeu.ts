@@ -6,6 +6,7 @@
 import Phaser from "phaser";
 import EcranInfo from "../3 - Utilitaires/EcranInfo";
 import Entite from "../2 - Joueur & Ennemis/Entite";
+import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -21,63 +22,38 @@ export default class BaseJeu extends Phaser.Scene {
 		const entite = new Entite(this, 387, 383);
 		this.add.existing(entite);
 
-		// platformes
-		const platformes = this.add.layer();
+		// liste_platformes
+		const liste_platformes = this.add.layer();
 
-		// collider
-		const collider = this.physics.add.collider(platformes.list, entite);
+		// platformePrefab
+		const platformePrefab = new PlatformePrefab(this, 869, 667);
+		liste_platformes.add(platformePrefab);
+
+		// colision_platformes_entites
+		const colision_platformes_entites = this.physics.add.collider(liste_platformes.list, entite);
 
 		this.ecranInfo = ecranInfo;
 		this.entite = entite;
-		this.platformes = platformes;
-		this.collider = collider;
+		this.liste_platformes = liste_platformes;
+		this.colision_platformes_entites = colision_platformes_entites;
 
 		this.events.emit("scene-awake");
 	}
 
 	public ecranInfo!: EcranInfo;
 	public entite!: Entite;
-	public platformes!: Phaser.GameObjects.Layer;
-	public collider!: Phaser.Physics.Arcade.Collider;
+	public liste_platformes!: Phaser.GameObjects.Layer;
+	public colision_platformes_entites!: Phaser.Physics.Arcade.Collider;
 
 	/* START-USER-CODE */
 
 	// Write your code here
-	constructor(key: any) {
-		super(key)
-		console.log("??");
-		//@ts-ignore
-		this.scene?.events?.once("scene-awake", () => console.log("OK"));
-
-		// const ecranInfo = new EcranInfo(this, -4, 17);
-		// this.add.existing(ecranInfo);
-
-		// // lists
-		// const liste_colision_platforme: Array<any> = [];
-
-		// this.ecranInfo = ecranInfo;
-		// this.liste_colision_platforme = liste_colision_platforme;
-
-
-	}
-
 	create() {
 		//this.editorCreate();
 	}
 
 	initialiseGroupesScene() {
 		this.go()
-	}
-
-	creerEcranTransitionNiveau() {
-		this.go();
-		console.log(this.ecranInfo);
-		//this.scene.events.once("scene-awake", () => console.log("OK"));
-/*
-		const ecranInfo = new EcranInfo(this, -4, 17);
-		const ecranInfoObjet = this.add.existing(ecranInfo);		
-		return ecranInfoObjet;
-		*/
 	}
 
 	ouvrirEcranTransitionNiveau() {

@@ -63,10 +63,8 @@ export default class Tuto extends BaseJeu {
 		this.tuto
 			.setInteractive()
 			.on('pointerdown', () => this.scene.start('Hiver'));
-			this.initialiseGroupesScene()
-			this.fermerEcranTransitionNiveau()
-			console.log(this.entite);
-			
+			this.go();
+			this.fermerEcranTransitionNiveau();
 	}
 
 	/* END-USER-CODE */
