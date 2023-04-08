@@ -56,19 +56,16 @@
             "list": []
         },
         {
-            "type": "Ellipse",
+            "prefabId": "38daeb1a-3a45-4557-b6ff-9a0e964d449b",
             "id": "fb5eac47-1eea-4190-9b99-94398bf62a89",
+            "unlock": [
+                "x",
+                "y"
+            ],
             "label": "rectangle_1",
             "components": [],
             "x": 42,
-            "y": 788,
-            "scaleX": 1.8150359184173324,
-            "scaleY": 1.8150359184173324,
-            "originX": 0,
-            "alpha": 0.3,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
+            "y": 788
         },
         {
             "type": "Ellipse",

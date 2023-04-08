@@ -6,6 +6,7 @@
 import Phaser from "phaser";
 import IndicationNiveau from "../3 - Utilitaires/IndicationNiveau";
 import Entite from "../2 - Joueur & Ennemis/Entite";
+import BoutonJoueur from "./BoutonJoueur";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -28,12 +29,8 @@ export default class BaseJeu extends Phaser.Scene {
 		const liste_platformes = this.add.layer();
 
 		// rectangle_1
-		const rectangle_1 = this.add.ellipse(42, 788, 128, 128);
-		rectangle_1.scaleX = 1.8150359184173324;
-		rectangle_1.scaleY = 1.8150359184173324;
-		rectangle_1.setOrigin(0, 0.5);
-		rectangle_1.alpha = 0.3;
-		rectangle_1.isFilled = true;
+		const rectangle_1 = new BoutonJoueur(this, 42, 788);
+		this.add.existing(rectangle_1);
 
 		// rectangle_3
 		const rectangle_3 = this.add.ellipse(314, 788, 128, 128);
