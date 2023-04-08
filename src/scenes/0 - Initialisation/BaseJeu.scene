@@ -5,7 +5,7 @@
         "exportClass": true,
         "autoImport": true,
         "preloadPackFiles": [],
-        "createMethodName": "go",
+        "createMethodName": "initElementBase",
         "compilerOutputLanguage": "TYPE_SCRIPT",
         "borderWidth": 1920,
         "borderHeight": 1080

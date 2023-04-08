@@ -12,7 +12,7 @@ import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
 
 export default class BaseJeu extends Phaser.Scene {
 
-	go(): void {
+	initElementBase(): void {
 
 		// ecranInfo
 		const ecranInfo = new EcranInfo(this, -4, 17);
@@ -49,11 +49,15 @@ export default class BaseJeu extends Phaser.Scene {
 
 	// Write your code here
 	create() {
+		console.log("CREATE DE BASE JEU");
+		this.initElementBase();
+		this.ecranInfo.fermer()
+		// this.tuto
+		// 	.setInteractive()
+		// 	.on('pointerdown', () => this.scene.start('Hiver'));
+		// 	this.go();
+		// 	this.fermerEcranTransitionNiveau();		
 		//this.editorCreate();
-	}
-
-	initialiseGroupesScene() {
-		this.go()
 	}
 
 	ouvrirEcranTransitionNiveau() {

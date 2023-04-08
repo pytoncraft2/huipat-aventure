@@ -47,13 +47,13 @@ export default class Hiver extends BaseJeu {
 
 	// Write your code here
 
-	create() {
+	// create() {
 
-		this.editorCreate();
-		this.go();
-		this.fermerEcranTransitionNiveau();
-		this.liste_platformes.removeAll().list.push(...this.platformes.list);
-	}
+	// 	this.editorCreate();
+	// 	this.go();
+	// 	this.fermerEcranTransitionNiveau();
+	// 	this.liste_platformes.removeAll().list.push(...this.platformes.list);
+	// }
 
 	/* END-USER-CODE */
 }
