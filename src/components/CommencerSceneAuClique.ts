@@ -16,7 +16,6 @@ export default class CommencerSceneAuClique extends UserComponent {
 		(gameObject as any)["__CommencerSceneAuClique"] = this;
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
@@ -29,9 +28,12 @@ export default class CommencerSceneAuClique extends UserComponent {
 
 	/* START-USER-CODE */
 
-	start() {		
-		this.gameObject.on("pointerup", () => {			
-			this.scene.scene.start(this.sceneKey);
+	start() {
+		this.gameObject.on("pointerup", () => {
+			this.scene.cameras.main.fadeOut(1000, 0, 0, 0)
+			this.scene.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam: any, effect: any) => {
+				this.scene.scene.start(this.sceneKey)
+			})
 		});
 	}
 

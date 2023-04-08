@@ -45,6 +45,7 @@ export default class BaseJeu extends Phaser.Scene {
 	// Write your code here
 	create() {
 		console.log("CREATE DE BASE JEU");
+		this.cameras.main.fadeIn(1000, 0, 0, 0)
 		this.initElementBase();
 		this.initSceneCourante()
 		this.ecranInfo.fermer()
