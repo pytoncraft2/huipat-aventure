@@ -58,23 +58,14 @@ export default class Tuto extends BaseJeu {
 	/* START-USER-CODE */
 
 	// Write your code here
-
-	// create() {
-
-	// 	this.editorCreate();
-	// 	this.tuto
-	// 		.setInteractive()
-	// 		.on('pointerdown', () => this.scene.start('Hiver'));
-	// 		this.go();
-	// 		this.fermerEcranTransitionNiveau();
-	// }
-
 	initSceneCourante() {
 		console.log(this.liste_platformes);
 
 		this.editorCreate();
 		this.liste_platformes.removeAll().list.push(...this.platformes.list);
-
+		this.tuto
+			.setInteractive()
+			.on('pointerdown', () => this.scene.start('Hiver'));
 	}
 
 	/* END-USER-CODE */

@@ -8,7 +8,7 @@ import ScrollFactor from "../../components/ScrollFactor";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class EcranInfo extends Phaser.GameObjects.Container {
+export default class IndicationNiveau extends Phaser.GameObjects.Container {
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number) {
 		super(scene, x ?? 0, y ?? -8);
@@ -38,6 +38,7 @@ export default class EcranInfo extends Phaser.GameObjects.Container {
 		this.texteNiveau = texteNiveau;
 
 		/* START-USER-CTR-CODE */
+		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 

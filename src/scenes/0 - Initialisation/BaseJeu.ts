@@ -5,7 +5,7 @@
 
 import Phaser from "phaser";
 import Entite from "../2 - Joueur & Ennemis/Entite";
-import EcranInfo from "../3 - Utilitaires/EcranInfo";
+import IndicationNiveau from "../3 - Utilitaires/IndicationNiveau";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -20,16 +20,16 @@ export default class BaseJeu extends Phaser.Scene {
 		// liste_platformes
 		const liste_platformes = this.add.layer();
 
-		// ecranInfo
-		const ecranInfo = new EcranInfo(this, -4, 17);
-		this.add.existing(ecranInfo);
+		// indicationNiveau
+		const indicationNiveau = new IndicationNiveau(this, -1, 39);
+		this.add.existing(indicationNiveau);
 
 		// colision_platformes_entites
 		const colision_platformes_entites = this.physics.add.collider(liste_platformes.list, entite);
 
 		this.entite = entite;
 		this.liste_platformes = liste_platformes;
-		this.ecranInfo = ecranInfo;
+		this.indicationNiveau = indicationNiveau;
 		this.colision_platformes_entites = colision_platformes_entites;
 
 		this.events.emit("scene-awake");
@@ -37,7 +37,7 @@ export default class BaseJeu extends Phaser.Scene {
 
 	public entite!: Entite;
 	public liste_platformes!: Phaser.GameObjects.Layer;
-	public ecranInfo!: EcranInfo;
+	public indicationNiveau!: IndicationNiveau;
 	public colision_platformes_entites!: Phaser.Physics.Arcade.Collider;
 
 	/* START-USER-CODE */
@@ -48,25 +48,19 @@ export default class BaseJeu extends Phaser.Scene {
 		this.cameras.main.fadeIn(1000, 0, 0, 0)
 		this.initElementBase();
 		this.initSceneCourante()
-		this.ecranInfo.fermer()
-		// this.tuto
-		// 	.setInteractive()
-		// 	.on('pointerdown', () => this.scene.start('Hiver'));
-		// 	this.go();
-		// 	this.fermerEcranTransitionNiveau();		
-		//this.editorCreate();
+		this.indicationNiveau.fermer()
 	}
 
 	ouvrirEcranTransitionNiveau() {
-		this.ecranInfo.ouvrir()
+		this.indicationNiveau.ouvrir()
 	}
 
 	fermerEcranTransitionNiveau() {
-		this.ecranInfo.fermer()
+		this.indicationNiveau.fermer()
 	}
 
 	ecranInfoExiste() {
-		return this.ecranInfo;
+		return this.indicationNiveau;
 	}
 
 	initSceneCourante() {

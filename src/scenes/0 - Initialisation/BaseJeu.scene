@@ -34,16 +34,16 @@
         },
         {
             "prefabId": "1f129a30-e7dc-4335-aa9f-c65e2d324b34",
-            "id": "80bacbed-268b-40ca-85da-ea271eb6a91e",
+            "id": "e292c864-1381-4b62-8560-8641647566ef",
             "unlock": [
                 "x",
                 "y"
             ],
-            "label": "ecranInfo",
+            "label": "indicationNiveau",
             "scope": "PUBLIC",
             "components": [],
-            "x": -4,
-            "y": 17,
+            "x": -1,
+            "y": 39,
             "nestedPrefabs": [],
             "list": []
         }
