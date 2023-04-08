@@ -45,9 +45,9 @@ export default class BaseJeu extends Phaser.Scene {
 	// Write your code here
 	create() {
 		console.log("CREATE DE BASE JEU");
-		this.cameras.main.fadeIn(1000, 0, 0, 0)
+		this.cameras.main.fadeIn(300, 0, 0, 0)
 		this.initElementBase();
-		this.initSceneCourante()
+		this.initSceneCourante();
 		this.indicationNiveau.fermer()
 	}
 
@@ -65,6 +65,13 @@ export default class BaseJeu extends Phaser.Scene {
 
 	initSceneCourante() {
 		console.log("INIT SCENE BASE JEU");
+	}
+
+	passageAuNiveauSuivant(cleScene: any) {
+		this.cameras.main.fadeOut(500, 0, 0, 0)
+		this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam: any, effect: any) => {
+			this.scene.start(cleScene)
+		})
 	}
 
 	/* END-USER-CODE */

@@ -46,6 +46,10 @@ export default class Hiver extends BaseJeu {
 	/* START-USER-CODE */
 
 	// Write your code here
+	initSceneCourante() {
+		this.editorCreate();
+		this.liste_platformes.removeAll().list.push(...this.platformes.list);
+	}
 
 	// create() {
 

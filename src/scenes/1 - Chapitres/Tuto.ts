@@ -5,6 +5,8 @@
 
 import BaseJeu from "../0 - Initialisation/BaseJeu";
 import InfosScene from "../3 - Utilitaires/InfosScene";
+import InteractiveObjet from "../../components/InteractiveObjet";
+import CommencerSceneAuClique from "../../components/CommencerSceneAuClique";
 import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
@@ -46,6 +48,11 @@ export default class Tuto extends BaseJeu {
 		const platformePrefab_2 = new PlatformePrefab(this, 1344, 800);
 		platformes.add(platformePrefab_2);
 
+		// tuto (components)
+		new InteractiveObjet(tuto);
+		const tutoCommencerSceneAuClique = new CommencerSceneAuClique(tuto);
+		tutoCommencerSceneAuClique.sceneKey = "Hiver";
+
 		this.tuto = tuto;
 		this.platformes = platformes;
 
@@ -59,13 +66,8 @@ export default class Tuto extends BaseJeu {
 
 	// Write your code here
 	initSceneCourante() {
-		console.log(this.liste_platformes);
-
 		this.editorCreate();
 		this.liste_platformes.removeAll().list.push(...this.platformes.list);
-		this.tuto
-			.setInteractive()
-			.on('pointerdown', () => this.scene.start('Hiver'));
 	}
 
 	/* END-USER-CODE */

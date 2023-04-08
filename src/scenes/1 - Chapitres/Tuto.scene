@@ -33,7 +33,11 @@
             "id": "f19a977e-5c17-4f3d-9068-9ee52e93066c",
             "label": "tuto",
             "scope": "PUBLIC",
-            "components": [],
+            "components": [
+                "InteractiveObjet",
+                "CommencerSceneAuClique"
+            ],
+            "CommencerSceneAuClique.sceneKey": "Hiver",
             "x": 960,
             "y": 540,
             "originX": 0.5,

@@ -16,7 +16,7 @@ export default class IndicationNiveau extends Phaser.GameObjects.Container {
 		// fondNoir
 		const fondNoir = scene.add.rectangle(965, 547, 128, 128);
 		fondNoir.scaleX = 15.727055413525404;
-		fondNoir.scaleY = 1.0790247153536647;
+		fondNoir.scaleY = 8.531576044202842;
 		fondNoir.isFilled = true;
 		fondNoir.fillColor = 0;
 		this.add(fondNoir);
@@ -38,7 +38,7 @@ export default class IndicationNiveau extends Phaser.GameObjects.Container {
 		this.texteNiveau = texteNiveau;
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+		this.setDepth(100);
 		/* END-USER-CTR-CODE */
 	}
 

@@ -13,8 +13,7 @@ export default class InteractiveObjet {
 		(gameObject as any)["__InteractiveObjet"] = this;
 
 		/* START-USER-CTR-CODE */
-		// console.log(this.gameObject.setSize());
-		this.gameObject.setInteractive();
+		this.gameObject.setInteractive({ cursor: 'pointer' });
 		/* END-USER-CTR-CODE */
 	}
 
