@@ -6,6 +6,9 @@
 import BaseJeu from "../0 - Initialisation/BaseJeu";
 import InfosScene from "../3 - Utilitaires/InfosScene";
 import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
+import Entite from "../2 - Joueur & Ennemis/Entite";
+import InteractiveObjet from "../../components/InteractiveObjet";
+import CommencerSceneAuClique from "../../components/CommencerSceneAuClique";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -36,28 +39,39 @@ export default class Hiver extends BaseJeu {
 		const platformePrefab_1 = new PlatformePrefab(this, 545, 811);
 		platformes.add(platformePrefab_1);
 
+		// entites
+		const entites = this.add.layer();
+
+		// entite
+		const entite = new Entite(this, 1199, 246, "liste_atlas", "chauve_run.png");
+		entites.add(entite);
+
+		// text_1
+		const text_1 = this.add.text(960, 476, "", {});
+		text_1.setOrigin(0.5, 0.5);
+		text_1.text = "SUIVANT";
+		text_1.setStyle({ "color": "#000000ff", "fontSize": "26px" });
+
+		// text_1 (components)
+		new InteractiveObjet(text_1);
+		const text_1CommencerSceneAuClique = new CommencerSceneAuClique(text_1);
+		text_1CommencerSceneAuClique.sceneKey = "Nuit";
+
 		this.platformes = platformes;
+		this.entites = entites;
 
 		this.events.emit("scene-awake");
 	}
 
 	public platformes!: Phaser.GameObjects.Layer;
+	public entites!: Phaser.GameObjects.Layer;
 
 	/* START-USER-CODE */
 
-	// Write your code here
 	initSceneCourante() {
 		this.editorCreate();
 		this.liste_platformes.removeAll().list.push(...this.platformes.list);
 	}
-
-	// create() {
-
-	// 	this.editorCreate();
-	// 	this.go();
-	// 	this.fermerEcranTransitionNiveau();
-	// 	this.liste_platformes.removeAll().list.push(...this.platformes.list);
-	// }
 
 	/* END-USER-CODE */
 }

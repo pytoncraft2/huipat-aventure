@@ -5,17 +5,15 @@
 
 import BaseJeu from "../0 - Initialisation/BaseJeu";
 import InfosScene from "../3 - Utilitaires/InfosScene";
-import InteractiveObjet from "../../components/InteractiveObjet";
-import CommencerSceneAuClique from "../../components/CommencerSceneAuClique";
 import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
 import Entite from "../2 - Joueur & Ennemis/Entite";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class Tuto extends BaseJeu {
+export default class Nuit extends BaseJeu {
 
 	constructor() {
-		super("Tuto");
+		super("Nuit");
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
@@ -25,66 +23,46 @@ export default class Tuto extends BaseJeu {
 	editorCreate(): void {
 
 		// infosScene
-		const infosScene = new InfosScene(this, 960, 439);
+		const infosScene = new InfosScene(this, 964, 546, "fond4");
 		this.add.existing(infosScene);
-
-		// tuto
-		const tuto = this.add.text(960, 540, "", {});
-		tuto.setOrigin(0.5, 0.5);
-		tuto.text = "Tuto";
-		tuto.setStyle({ "color": "#000000ff", "fontSize": "26px" });
 
 		// platformes
 		const platformes = this.add.layer();
 
 		// platformePrefab
-		const platformePrefab = new PlatformePrefab(this, 1344, 400);
+		const platformePrefab = new PlatformePrefab(this, 1960, 682);
 		platformes.add(platformePrefab);
 
 		// platformePrefab_1
-		const platformePrefab_1 = new PlatformePrefab(this, 768, 600);
+		const platformePrefab_1 = new PlatformePrefab(this, 1070, 900);
 		platformes.add(platformePrefab_1);
 
 		// platformePrefab_2
-		const platformePrefab_2 = new PlatformePrefab(this, 1344, 800);
+		const platformePrefab_2 = new PlatformePrefab(this, 356, 466);
 		platformes.add(platformePrefab_2);
 
 		// entites
 		const entites = this.add.layer();
 
 		// entite
-		const entite = new Entite(this, 960, 200, "araigne");
+		const entite = new Entite(this, 1199, 246, "liste_atlas", "chauve_run.png");
 		entites.add(entite);
 
-		// entite_1
-		const entite_1 = new Entite(this, 1344, 200, "araigne");
-		entites.add(entite_1);
-
-		// tuto (components)
-		new InteractiveObjet(tuto);
-		const tutoCommencerSceneAuClique = new CommencerSceneAuClique(tuto);
-		tutoCommencerSceneAuClique.sceneKey = "Hiver";
-
-		this.tuto = tuto;
 		this.platformes = platformes;
 		this.entites = entites;
 
 		this.events.emit("scene-awake");
 	}
 
-	public tuto!: Phaser.GameObjects.Text;
 	public platformes!: Phaser.GameObjects.Layer;
 	public entites!: Phaser.GameObjects.Layer;
 
 	/* START-USER-CODE */
-
-	// Write your code here
 	initSceneCourante() {
 		this.editorCreate();
 		this.liste_platformes.removeAll().list.push(...this.platformes.list);
 		this.liste_entite.list.push(...this.entites.list);
 	}
-
 	/* END-USER-CODE */
 }
 

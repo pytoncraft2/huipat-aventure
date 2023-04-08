@@ -21,7 +21,7 @@ export default class Entite extends Phaser.GameObjects.Image {
 		this.body.setSize(200, 189, false);
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+		this.body.setSize(this.displayWidth, this.displayHeight)
 		/* END-USER-CTR-CODE */
 	}
 

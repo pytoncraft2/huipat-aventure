@@ -12,27 +12,6 @@
     },
     "displayList": [
         {
-            "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-            "id": "2ec6130e-8b91-4782-936d-c2b9a9c56c6c",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "entite",
-            "scope": "PUBLIC",
-            "components": [],
-            "x": 387,
-            "y": 383
-        },
-        {
-            "type": "Layer",
-            "id": "d206d505-8e01-4632-ae55-d98add2df831",
-            "label": "liste_platformes",
-            "scope": "PUBLIC",
-            "components": [],
-            "list": []
-        },
-        {
             "prefabId": "1f129a30-e7dc-4335-aa9f-c65e2d324b34",
             "id": "e292c864-1381-4b62-8560-8641647566ef",
             "unlock": [
@@ -43,8 +22,37 @@
             "scope": "PUBLIC",
             "components": [],
             "x": -1,
-            "y": 39,
+            "y": 2,
             "nestedPrefabs": [],
+            "list": []
+        },
+        {
+            "type": "Layer",
+            "id": "a1472bda-7906-4a57-9096-a98d1d83551d",
+            "label": "liste_entite",
+            "scope": "PUBLIC",
+            "components": [],
+            "list": [
+                {
+                    "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
+                    "id": "2ec6130e-8b91-4782-936d-c2b9a9c56c6c",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "entite",
+                    "components": [],
+                    "x": 355,
+                    "y": -65
+                }
+            ]
+        },
+        {
+            "type": "Layer",
+            "id": "d206d505-8e01-4632-ae55-d98add2df831",
+            "label": "liste_platformes",
+            "scope": "PUBLIC",
+            "components": [],
             "list": []
         }
     ],
@@ -55,7 +63,7 @@
             "label": "colision_platformes_entites",
             "scope": "PUBLIC",
             "object1": "liste_platformes.list",
-            "object2": "entite"
+            "object2": "liste_entite.list"
         }
     ],
     "meta": {

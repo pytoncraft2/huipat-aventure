@@ -61,6 +61,49 @@
                     "y": 811
                 }
             ]
+        },
+        {
+            "type": "Layer",
+            "id": "e71957a6-e2ee-409e-a370-c62a9138ab1a",
+            "label": "entites",
+            "scope": "PUBLIC",
+            "components": [],
+            "list": [
+                {
+                    "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
+                    "id": "c3aa14a8-5462-41ba-86aa-1c37f1a22b85",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "texture"
+                    ],
+                    "label": "entite",
+                    "components": [],
+                    "texture": {
+                        "key": "liste_atlas",
+                        "frame": "chauve_run.png"
+                    },
+                    "x": 1199,
+                    "y": 246
+                }
+            ]
+        },
+        {
+            "type": "Text",
+            "id": "6e194108-ff84-44ce-9319-1eee3f3b6380",
+            "label": "text_1",
+            "components": [
+                "InteractiveObjet",
+                "CommencerSceneAuClique"
+            ],
+            "CommencerSceneAuClique.sceneKey": "Nuit",
+            "x": 960,
+            "y": 476,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "SUIVANT",
+            "fontSize": "26px",
+            "color": "#000000ff"
         }
     ],
     "plainObjects": [],

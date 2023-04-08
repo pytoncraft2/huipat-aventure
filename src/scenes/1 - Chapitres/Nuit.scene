@@ -1,16 +1,13 @@
 {
-    "id": "78d78e28-6581-465c-8a12-4cb5e81758b3",
+    "id": "cd8e886a-2de0-4a57-a82f-75722617e304",
     "sceneType": "SCENE",
     "settings": {
-        "snapEnabled": true,
-        "snapWidth": 192,
-        "snapHeight": 200,
         "exportClass": true,
         "autoImport": true,
         "superClassName": "BaseJeu",
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
-        "sceneKey": "Tuto",
+        "sceneKey": "Nuit",
         "compilerOutputLanguage": "TYPE_SCRIPT",
         "borderWidth": 1920,
         "borderHeight": 1080
@@ -18,89 +15,75 @@
     "displayList": [
         {
             "prefabId": "50219a84-998c-4bbd-9ff3-7eba6c5afaaf",
-            "id": "7b87227c-129b-496f-8762-1413a078e39b",
+            "id": "58d0cad8-0d80-4611-835f-10e87b523411",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "texture"
             ],
             "label": "infosScene",
             "components": [],
-            "x": 960,
-            "y": 439
-        },
-        {
-            "type": "Text",
-            "id": "f19a977e-5c17-4f3d-9068-9ee52e93066c",
-            "label": "tuto",
-            "scope": "PUBLIC",
-            "components": [
-                "InteractiveObjet",
-                "CommencerSceneAuClique"
-            ],
-            "CommencerSceneAuClique.sceneKey": "Hiver",
-            "x": 960,
-            "y": 540,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "Tuto",
-            "fontSize": "26px",
-            "color": "#000000ff"
+            "texture": {
+                "key": "fond4"
+            },
+            "x": 964,
+            "y": 546
         },
         {
             "type": "Layer",
-            "id": "310cfe5c-0ca8-4b13-badd-761fa9a027cc",
+            "id": "63918b41-485a-4c11-8cf7-e40d71ea2e4a",
             "label": "platformes",
             "scope": "PUBLIC",
             "components": [],
             "list": [
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "8d976fb4-fcda-438f-9edc-3759cb8a3851",
+                    "id": "99c8c782-c2a3-4452-9be8-1e83bc116d6b",
                     "unlock": [
                         "x",
                         "y"
                     ],
                     "label": "platformePrefab",
                     "components": [],
-                    "x": 1344,
-                    "y": 400
+                    "x": 1960,
+                    "y": 682
                 },
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "005a04f5-217b-494e-812a-01e853bda1f6",
+                    "id": "d444ab2e-80e8-4a3d-9f32-99020a932b89",
                     "unlock": [
                         "x",
                         "y"
                     ],
                     "label": "platformePrefab_1",
                     "components": [],
-                    "x": 768,
-                    "y": 600
+                    "x": 1070,
+                    "y": 900
                 },
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "1efe185f-0faa-46c9-869e-c93a1fc06ea8",
+                    "id": "71a714ce-d4b1-4dbb-a6b4-b7087a4b8d3b",
                     "unlock": [
                         "x",
                         "y"
                     ],
                     "label": "platformePrefab_2",
                     "components": [],
-                    "x": 1344,
-                    "y": 800
+                    "x": 356,
+                    "y": 466
                 }
             ]
         },
         {
             "type": "Layer",
-            "id": "39af0197-ea98-4d0e-a161-0c1d7867edae",
+            "id": "e71957a6-e2ee-409e-a370-c62a9138ab1a",
             "label": "entites",
             "scope": "PUBLIC",
             "components": [],
             "list": [
                 {
                     "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-                    "id": "d632f78d-ef1c-4a40-9a86-48a98720200c",
+                    "id": "c3aa14a8-5462-41ba-86aa-1c37f1a22b85",
                     "unlock": [
                         "x",
                         "y",
@@ -109,26 +92,11 @@
                     "label": "entite",
                     "components": [],
                     "texture": {
-                        "key": "araigne"
+                        "key": "liste_atlas",
+                        "frame": "chauve_run.png"
                     },
-                    "x": 960,
-                    "y": 200
-                },
-                {
-                    "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-                    "id": "59adcd60-b7c0-4336-a089-cd02be21a782",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "texture"
-                    ],
-                    "label": "entite_1",
-                    "components": [],
-                    "texture": {
-                        "key": "araigne"
-                    },
-                    "x": 1344,
-                    "y": 200
+                    "x": 1199,
+                    "y": 246
                 }
             ]
         }

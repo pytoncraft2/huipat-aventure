@@ -5,6 +5,7 @@ import BaseJeu from "./scenes/0 - Initialisation/BaseJeu";
 import Tuto from "./scenes/1 - Chapitres/Tuto";
 import Menu from "./scenes/0 - Initialisation/02-Menu/Menu";
 import Hiver from "./scenes/1 - Chapitres/Hiver";
+import Nuit from "./scenes/1 - Chapitres/Nuit";
 
 class Boot extends Phaser.Scene {
 
@@ -40,7 +41,7 @@ window.addEventListener('load', function () {
             mode: Phaser.Scale.ENVELOP,
             autoCenter: Phaser.Scale.CENTER_BOTH
         },
-        scene: [Boot, Preload, Menu, BaseJeu, Tuto, Hiver]
+        scene: [Boot, Preload, Menu, BaseJeu, Tuto, Hiver, Nuit]
     });
 
     game.scene.start("Boot");
