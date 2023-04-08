@@ -50,12 +50,9 @@ export default class Hiver extends BaseJeu {
 	create() {
 
 		this.editorCreate();
-			this.go();
-			this.fermerEcranTransitionNiveau();
-//		this.colision_detecteur_remplie.object2 = [...(this.scene as any).platformesLayer.list, ...(this.scene as any).platformesLayer_2.list];
-this.liste_platformes.destroy();
-this.colision_platformes_entites.object1 = this.platformes.list;
-
+		this.go();
+		this.fermerEcranTransitionNiveau();
+		this.liste_platformes.removeAll().list.push(...this.platformes.list);
 	}
 
 	/* END-USER-CODE */
