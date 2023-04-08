@@ -7,15 +7,13 @@ import BaseJeu from "../0 - Initialisation/BaseJeu";
 import InfosScene from "../3 - Utilitaires/InfosScene";
 import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
 import Entite from "../2 - Joueur & Ennemis/Entite";
-import InteractiveObjet from "../../components/InteractiveObjet";
-import CommencerSceneAuClique from "../../components/CommencerSceneAuClique";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class Nuit extends BaseJeu {
+export default class Lac extends BaseJeu {
 
 	constructor() {
-		super("Nuit");
+		super("Lac");
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
@@ -25,40 +23,42 @@ export default class Nuit extends BaseJeu {
 	editorCreate(): void {
 
 		// infosScene
-		const infosScene = new InfosScene(this, 964, 546, "fond4");
+		const infosScene = new InfosScene(this, 964, 546, "fond3");
 		this.add.existing(infosScene);
 
 		// platformes
 		const platformes = this.add.layer();
 
 		// platformePrefab
-		const platformePrefab = new PlatformePrefab(this, 1960, 682);
+		const platformePrefab = new PlatformePrefab(this, 1056, 824);
 		platformes.add(platformePrefab);
 
 		// platformePrefab_1
-		const platformePrefab_1 = new PlatformePrefab(this, 1070, 900);
+		const platformePrefab_1 = new PlatformePrefab(this, 1016, 980);
 		platformes.add(platformePrefab_1);
 
 		// platformePrefab_2
-		const platformePrefab_2 = new PlatformePrefab(this, 356, 466);
+		const platformePrefab_2 = new PlatformePrefab(this, 1093, 625);
 		platformes.add(platformePrefab_2);
 
 		// entites
 		const entites = this.add.layer();
 
 		// entite
-		const entite = new Entite(this, 1199, 246, "liste_atlas", "chauve_run.png");
+		const entite = new Entite(this, 866, 531, "liste_atlas", "girl_run03.png");
 		entites.add(entite);
 
-		// text_1
-		const text_1 = this.add.text(815, 590, "", {});
-		text_1.text = "Suivant";
-		text_1.setStyle({ "fontSize": "26px" });
+		// entite_1
+		const entite_1 = new Entite(this, 1225, 530, "liste_atlas", "boy_idle1.png");
+		entites.add(entite_1);
 
-		// text_1 (components)
-		new InteractiveObjet(text_1);
-		const text_1CommencerSceneAuClique = new CommencerSceneAuClique(text_1);
-		text_1CommencerSceneAuClique.sceneKey = "Lac";
+		// entite_2
+		const entite_2 = new Entite(this, 1725, 566, "araigne");
+		entites.add(entite_2);
+
+		// entite_3
+		const entite_3 = new Entite(this, 1060, 745, "araigne");
+		entites.add(entite_3);
 
 		this.platformes = platformes;
 		this.entites = entites;
@@ -70,6 +70,8 @@ export default class Nuit extends BaseJeu {
 	public entites!: Phaser.GameObjects.Layer;
 
 	/* START-USER-CODE */
+
+	// Write your code here
 	initSceneCourante() {
 		this.editorCreate();
 		this.liste_platformes.removeAll().list.push(...this.platformes.list);

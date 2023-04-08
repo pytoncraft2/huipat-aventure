@@ -1,5 +1,5 @@
 {
-    "id": "cd8e886a-2de0-4a57-a82f-75722617e304",
+    "id": "05d4a83e-14aa-4f0b-b7ac-563a05be53e9",
     "sceneType": "SCENE",
     "settings": {
         "exportClass": true,
@@ -7,7 +7,7 @@
         "superClassName": "BaseJeu",
         "preloadPackFiles": [],
         "createMethodName": "editorCreate",
-        "sceneKey": "Nuit",
+        "sceneKey": "Lac",
         "compilerOutputLanguage": "TYPE_SCRIPT",
         "borderWidth": 1920,
         "borderHeight": 1080
@@ -24,7 +24,7 @@
             "label": "infosScene",
             "components": [],
             "texture": {
-                "key": "fond4"
+                "key": "fond3"
             },
             "x": 964,
             "y": 546
@@ -45,8 +45,8 @@
                     ],
                     "label": "platformePrefab",
                     "components": [],
-                    "x": 1960,
-                    "y": 682
+                    "x": 1056,
+                    "y": 824
                 },
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
@@ -57,8 +57,8 @@
                     ],
                     "label": "platformePrefab_1",
                     "components": [],
-                    "x": 1070,
-                    "y": 900
+                    "x": 1016,
+                    "y": 980
                 },
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
@@ -69,8 +69,8 @@
                     ],
                     "label": "platformePrefab_2",
                     "components": [],
-                    "x": 356,
-                    "y": 466
+                    "x": 1093,
+                    "y": 625
                 }
             ]
         },
@@ -93,26 +93,61 @@
                     "components": [],
                     "texture": {
                         "key": "liste_atlas",
-                        "frame": "chauve_run.png"
+                        "frame": "girl_run03.png"
                     },
-                    "x": 1199,
-                    "y": 246
+                    "x": 866,
+                    "y": 531
+                },
+                {
+                    "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
+                    "id": "87ba3246-4615-4331-9353-db0d9eed1cbe",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "texture"
+                    ],
+                    "label": "entite_1",
+                    "components": [],
+                    "texture": {
+                        "key": "liste_atlas",
+                        "frame": "boy_idle1.png"
+                    },
+                    "x": 1225,
+                    "y": 530
+                },
+                {
+                    "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
+                    "id": "f099936e-6ce6-48ed-b80d-f231baaa2a44",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "texture"
+                    ],
+                    "label": "entite_2",
+                    "components": [],
+                    "texture": {
+                        "key": "araigne"
+                    },
+                    "x": 1725,
+                    "y": 566
+                },
+                {
+                    "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
+                    "id": "564683f9-cf37-4ba6-99b6-4a04e0cf7626",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "texture"
+                    ],
+                    "label": "entite_3",
+                    "components": [],
+                    "texture": {
+                        "key": "araigne"
+                    },
+                    "x": 1060,
+                    "y": 745
                 }
             ]
-        },
-        {
-            "type": "Text",
-            "id": "9f50b367-5055-4f8e-b95e-7a1c1e44fc63",
-            "label": "text_1",
-            "components": [
-                "InteractiveObjet",
-                "CommencerSceneAuClique"
-            ],
-            "CommencerSceneAuClique.sceneKey": "Lac",
-            "x": 815,
-            "y": 590,
-            "text": "Suivant",
-            "fontSize": "26px"
         }
     ],
     "plainObjects": [],

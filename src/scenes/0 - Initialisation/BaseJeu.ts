@@ -54,18 +54,6 @@ export default class BaseJeu extends Phaser.Scene {
 		this.indicationNiveau.fermer()
 	}
 
-	ouvrirEcranTransitionNiveau() {
-		this.indicationNiveau.ouvrir()
-	}
-
-	fermerEcranTransitionNiveau() {
-		this.indicationNiveau.fermer()
-	}
-
-	ecranInfoExiste() {
-		return this.indicationNiveau;
-	}
-
 	initSceneCourante() {
 		console.log("INIT SCENE BASE JEU");
 	}

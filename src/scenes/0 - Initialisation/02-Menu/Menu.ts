@@ -58,6 +58,7 @@ export default class Menu extends Phaser.Scene {
 
 	create() {
 
+		this.scale.lockOrientation('landscape');
 		this.editorCreate();
 	}
 
