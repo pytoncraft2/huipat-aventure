@@ -13,7 +13,7 @@ export default class InfosScene extends Phaser.GameObjects.Image {
 		super(scene, x ?? 0, y ?? 0, texture || "fond", frame);
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+		this.setDepth(-1);
 		/* END-USER-CTR-CODE */
 	}
 

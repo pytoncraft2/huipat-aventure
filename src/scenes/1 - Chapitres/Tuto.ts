@@ -47,11 +47,13 @@ export default class Tuto extends BaseJeu {
 		platformes.add(platformePrefab_2);
 
 		this.tuto = tuto;
+		this.platformes = platformes;
 
 		this.events.emit("scene-awake");
 	}
 
 	public tuto!: Phaser.GameObjects.Text;
+	public platformes!: Phaser.GameObjects.Layer;
 
 	/* START-USER-CODE */
 
@@ -66,6 +68,14 @@ export default class Tuto extends BaseJeu {
 	// 		this.go();
 	// 		this.fermerEcranTransitionNiveau();
 	// }
+
+	initSceneCourante() {
+		console.log(this.liste_platformes);
+
+		this.editorCreate();
+		this.liste_platformes.removeAll().list.push(...this.platformes.list);
+
+	}
 
 	/* END-USER-CODE */
 }

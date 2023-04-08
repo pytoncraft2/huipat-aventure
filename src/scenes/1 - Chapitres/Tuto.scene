@@ -46,6 +46,7 @@
             "type": "Layer",
             "id": "310cfe5c-0ca8-4b13-badd-761fa9a027cc",
             "label": "platformes",
+            "scope": "PUBLIC",
             "components": [],
             "list": [
                 {

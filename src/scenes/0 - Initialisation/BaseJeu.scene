@@ -12,21 +12,6 @@
     },
     "displayList": [
         {
-            "prefabId": "1f129a30-e7dc-4335-aa9f-c65e2d324b34",
-            "id": "80bacbed-268b-40ca-85da-ea271eb6a91e",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "ecranInfo",
-            "scope": "PUBLIC",
-            "components": [],
-            "x": -4,
-            "y": 17,
-            "nestedPrefabs": [],
-            "list": []
-        },
-        {
             "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
             "id": "2ec6130e-8b91-4782-936d-c2b9a9c56c6c",
             "unlock": [
@@ -45,20 +30,22 @@
             "label": "liste_platformes",
             "scope": "PUBLIC",
             "components": [],
-            "list": [
-                {
-                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "642c47be-22c5-4449-9b4a-607437b060d7",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "platformePrefab",
-                    "components": [],
-                    "x": 869,
-                    "y": 667
-                }
-            ]
+            "list": []
+        },
+        {
+            "prefabId": "1f129a30-e7dc-4335-aa9f-c65e2d324b34",
+            "id": "80bacbed-268b-40ca-85da-ea271eb6a91e",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "ecranInfo",
+            "scope": "PUBLIC",
+            "components": [],
+            "x": -4,
+            "y": 17,
+            "nestedPrefabs": [],
+            "list": []
         }
     ],
     "plainObjects": [

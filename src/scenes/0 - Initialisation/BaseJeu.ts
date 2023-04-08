@@ -4,19 +4,14 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import EcranInfo from "../3 - Utilitaires/EcranInfo";
 import Entite from "../2 - Joueur & Ennemis/Entite";
-import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
+import EcranInfo from "../3 - Utilitaires/EcranInfo";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
 export default class BaseJeu extends Phaser.Scene {
 
 	initElementBase(): void {
-
-		// ecranInfo
-		const ecranInfo = new EcranInfo(this, -4, 17);
-		this.add.existing(ecranInfo);
 
 		// entite
 		const entite = new Entite(this, 387, 383);
@@ -25,24 +20,24 @@ export default class BaseJeu extends Phaser.Scene {
 		// liste_platformes
 		const liste_platformes = this.add.layer();
 
-		// platformePrefab
-		const platformePrefab = new PlatformePrefab(this, 869, 667);
-		liste_platformes.add(platformePrefab);
+		// ecranInfo
+		const ecranInfo = new EcranInfo(this, -4, 17);
+		this.add.existing(ecranInfo);
 
 		// colision_platformes_entites
 		const colision_platformes_entites = this.physics.add.collider(liste_platformes.list, entite);
 
-		this.ecranInfo = ecranInfo;
 		this.entite = entite;
 		this.liste_platformes = liste_platformes;
+		this.ecranInfo = ecranInfo;
 		this.colision_platformes_entites = colision_platformes_entites;
 
 		this.events.emit("scene-awake");
 	}
 
-	public ecranInfo!: EcranInfo;
 	public entite!: Entite;
 	public liste_platformes!: Phaser.GameObjects.Layer;
+	public ecranInfo!: EcranInfo;
 	public colision_platformes_entites!: Phaser.Physics.Arcade.Collider;
 
 	/* START-USER-CODE */
@@ -51,6 +46,7 @@ export default class BaseJeu extends Phaser.Scene {
 	create() {
 		console.log("CREATE DE BASE JEU");
 		this.initElementBase();
+		this.initSceneCourante()
 		this.ecranInfo.fermer()
 		// this.tuto
 		// 	.setInteractive()
@@ -68,11 +64,12 @@ export default class BaseJeu extends Phaser.Scene {
 		this.ecranInfo.fermer()
 	}
 
-	initialiseColisionEntitePlatforme() {
-	}
-
 	ecranInfoExiste() {
 		return this.ecranInfo;
+	}
+
+	initSceneCourante() {
+		console.log("INIT SCENE BASE JEU");
 	}
 
 	/* END-USER-CODE */
