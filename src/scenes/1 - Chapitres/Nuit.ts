@@ -25,7 +25,7 @@ export default class Nuit extends BaseJeu {
 	editorCreate(): void {
 
 		// infosScene
-		const infosScene = new InfosScene(this, 964, 546, "fond4");
+		const infosScene = new InfosScene(this, 960, 540, "fond4");
 		this.add.existing(infosScene);
 
 		// platformes

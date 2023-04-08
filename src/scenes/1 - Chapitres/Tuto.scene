@@ -109,7 +109,8 @@
                     "label": "entite",
                     "components": [],
                     "texture": {
-                        "key": "araigne"
+                        "key": "liste_atlas",
+                        "frame": "spider_run.png"
                     },
                     "x": 960,
                     "y": 200
@@ -125,7 +126,8 @@
                     "label": "entite_1",
                     "components": [],
                     "texture": {
-                        "key": "araigne"
+                        "key": "liste_atlas",
+                        "frame": "spider_run.png"
                     },
                     "x": 1344,
                     "y": 200

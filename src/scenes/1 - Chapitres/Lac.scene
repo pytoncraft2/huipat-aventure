@@ -26,8 +26,8 @@
             "texture": {
                 "key": "fond3"
             },
-            "x": 964,
-            "y": 546
+            "x": 960,
+            "y": 540
         },
         {
             "type": "Layer",
@@ -36,18 +36,6 @@
             "scope": "PUBLIC",
             "components": [],
             "list": [
-                {
-                    "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
-                    "id": "99c8c782-c2a3-4452-9be8-1e83bc116d6b",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "platformePrefab",
-                    "components": [],
-                    "x": 1056,
-                    "y": 824
-                },
                 {
                     "prefabId": "4081b6e2-d0ce-4eb8-ade1-6452e7f87359",
                     "id": "d444ab2e-80e8-4a3d-9f32-99020a932b89",
@@ -126,7 +114,8 @@
                     "label": "entite_2",
                     "components": [],
                     "texture": {
-                        "key": "araigne"
+                        "key": "liste_atlas",
+                        "frame": "spider_run.png"
                     },
                     "x": 1725,
                     "y": 566
@@ -142,7 +131,8 @@
                     "label": "entite_3",
                     "components": [],
                     "texture": {
-                        "key": "araigne"
+                        "key": "liste_atlas",
+                        "frame": "spider_run.png"
                     },
                     "x": 1060,
                     "y": 745

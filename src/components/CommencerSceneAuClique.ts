@@ -29,7 +29,8 @@ export default class CommencerSceneAuClique extends UserComponent {
 	/* START-USER-CODE */
 
 	start() {
-		this.gameObject.on("pointerup", () => {
+		this.gameObject.once("pointerup", () => {
+			this.scene.scale.startFullscreen();
 			this.scene.cameras.main.fadeOut(600, 0, 0, 0)
 			this.scene.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam: any, effect: any) => {
 				this.scene.scene.start(this.sceneKey)

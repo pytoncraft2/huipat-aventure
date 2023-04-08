@@ -2,27 +2,12 @@
     "section1": {
         "files": [
             {
-                "url": "assets/araigne.svg",
-                "svgConfig": {
-                    "width": 0,
-                    "height": 0,
-                    "scale": 0
-                },
-                "type": "svg",
-                "key": "araigne"
+                "url": "assets/animations.json",
+                "type": "animation",
+                "key": "animations"
             },
             {
-                "url": "assets/chauve-souris.svg",
-                "svgConfig": {
-                    "width": 0,
-                    "height": 0,
-                    "scale": 0
-                },
-                "type": "svg",
-                "key": "chauve-souris"
-            },
-            {
-                "url": "assets/coeur.svg",
+                "url": "assets/interface-utilisateur/coeur.svg",
                 "svgConfig": {
                     "width": 0,
                     "height": 0,
@@ -32,39 +17,24 @@
                 "key": "coeur"
             },
             {
-                "url": "assets/fond.jpg",
+                "url": "assets/arriere-plans/fond.jpg",
                 "type": "image",
                 "key": "fond"
             },
             {
-                "url": "assets/fond2.png",
+                "url": "assets/arriere-plans/fond2.png",
                 "type": "image",
                 "key": "fond2"
             },
             {
-                "url": "assets/fond3.png",
+                "url": "assets/arriere-plans/fond3.png",
                 "type": "image",
                 "key": "fond3"
             },
             {
-                "url": "assets/fond4.jpg",
+                "url": "assets/arriere-plans/fond4.jpg",
                 "type": "image",
                 "key": "fond4"
-            },
-            {
-                "url": "assets/herbe.svg",
-                "svgConfig": {
-                    "width": 0,
-                    "height": 0,
-                    "scale": 0
-                },
-                "type": "svg",
-                "key": "herbe"
-            },
-            {
-                "url": "assets/huipat.png",
-                "type": "image",
-                "key": "huipat"
             },
             {
                 "atlasURL": "assets/liste_atlas.json",
@@ -78,7 +48,7 @@
                 "key": "toile"
             },
             {
-                "url": "assets/atlas/ui.png",
+                "url": "assets/interface-utilisateur/ui.png",
                 "frameConfig": {
                     "frameWidth": 32,
                     "frameHeight": 32,
@@ -89,12 +59,6 @@
                 },
                 "type": "spritesheet",
                 "key": "ui"
-            },
-            {
-                "atlasURL": "assets/atlas/ui.json",
-                "textureURL": "assets/atlas/ui.png",
-                "type": "atlas",
-                "key": "ui_1"
             }
         ]
     },

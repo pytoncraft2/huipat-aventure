@@ -23,15 +23,11 @@ export default class Lac extends BaseJeu {
 	editorCreate(): void {
 
 		// infosScene
-		const infosScene = new InfosScene(this, 964, 546, "fond3");
+		const infosScene = new InfosScene(this, 960, 540, "fond3");
 		this.add.existing(infosScene);
 
 		// platformes
 		const platformes = this.add.layer();
-
-		// platformePrefab
-		const platformePrefab = new PlatformePrefab(this, 1056, 824);
-		platformes.add(platformePrefab);
 
 		// platformePrefab_1
 		const platformePrefab_1 = new PlatformePrefab(this, 1016, 980);
@@ -53,11 +49,11 @@ export default class Lac extends BaseJeu {
 		entites.add(entite_1);
 
 		// entite_2
-		const entite_2 = new Entite(this, 1725, 566, "araigne");
+		const entite_2 = new Entite(this, 1725, 566, "liste_atlas", "spider_run.png");
 		entites.add(entite_2);
 
 		// entite_3
-		const entite_3 = new Entite(this, 1060, 745, "araigne");
+		const entite_3 = new Entite(this, 1060, 745, "liste_atlas", "spider_run.png");
 		entites.add(entite_3);
 
 		this.platformes = platformes;

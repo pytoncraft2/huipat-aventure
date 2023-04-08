@@ -25,7 +25,7 @@ export default class Hiver extends BaseJeu {
 	editorCreate(): void {
 
 		// infosScene
-		const infosScene = new InfosScene(this, 980, 478, "fond2");
+		const infosScene = new InfosScene(this, 960, 540, "fond2");
 		this.add.existing(infosScene);
 
 		// platformes
