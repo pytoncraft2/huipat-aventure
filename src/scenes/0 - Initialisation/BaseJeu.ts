@@ -6,7 +6,8 @@
 import Phaser from "phaser";
 import IndicationNiveau from "../3 - Utilitaires/IndicationNiveau";
 import Entite from "../2 - Joueur & Ennemis/Entite";
-import BoutonJoueur from "./BoutonJoueur";
+import PlayerButton from "../3 - Utilitaires/PlayerButton";
+import PlayerController from "../../components/PlayerController";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -28,44 +29,45 @@ export default class BaseJeu extends Phaser.Scene {
 		// liste_platformes
 		const liste_platformes = this.add.layer();
 
-		// rectangle_1
-		const rectangle_1 = new BoutonJoueur(this, 42, 788);
-		this.add.existing(rectangle_1);
+		// playerButton
+		const playerButton = new PlayerButton(this, 193, 797, "ui", "btn-left");
+		this.add.existing(playerButton);
 
-		// rectangle_3
-		const rectangle_3 = this.add.ellipse(314, 788, 128, 128);
-		rectangle_3.scaleX = 1.8150359184173324;
-		rectangle_3.scaleY = 1.8150359184173324;
-		rectangle_3.setOrigin(0, 0.5);
-		rectangle_3.alpha = 0.3;
-		rectangle_3.isFilled = true;
+		// playerButton_1
+		const playerButton_1 = new PlayerButton(this, 489, 797, "ui", "btn-right");
+		this.add.existing(playerButton_1);
 
-		// rectangle_4
-		const rectangle_4 = this.add.ellipse(1613, 510, 128, 128);
-		rectangle_4.scaleX = 1.8150359184173324;
-		rectangle_4.scaleY = 1.8150359184173324;
-		rectangle_4.setOrigin(0, 0.5);
-		rectangle_4.alpha = 0.3;
-		rectangle_4.isFilled = true;
+		// playerButton_2
+		const playerButton_2 = new PlayerButton(this, 1730.5, 486);
+		this.add.existing(playerButton_2);
 
-		// rectangle_5
-		const rectangle_5 = this.add.ellipse(1613, 782, 128, 128);
-		rectangle_5.scaleX = 1.8150359184173324;
-		rectangle_5.scaleY = 1.8150359184173324;
-		rectangle_5.setOrigin(0, 0.5);
-		rectangle_5.alpha = 0.3;
-		rectangle_5.isFilled = true;
+		// playerButton_3
+		const playerButton_3 = new PlayerButton(this, 1730.5, 782);
+		this.add.existing(playerButton_3);
+		playerButton_3.angle = -180;
 
-		// rectangle
-		const rectangle = this.add.ellipse(1379, 645, 128, 128);
-		rectangle.scaleX = 1.8150359184173324;
-		rectangle.scaleY = 1.8150359184173324;
-		rectangle.setOrigin(0, 0.5);
-		rectangle.alpha = 0.3;
-		rectangle.isFilled = true;
+		// playerButton_4
+		const playerButton_4 = new PlayerButton(this, 1470, 631);
+		this.add.existing(playerButton_4);
 
 		// colision_platformes_entites
 		const colision_platformes_entites = this.physics.add.collider(liste_platformes.list, liste_entite.list);
+
+		// playerButton (components)
+		const playerButtonPlayerController = PlayerController.getComponent(playerButton);
+		playerButtonPlayerController.direction = "left";
+
+		// playerButton_1 (components)
+		const playerButton_1PlayerController = PlayerController.getComponent(playerButton_1);
+		playerButton_1PlayerController.direction = "right";
+
+		// playerButton_3 (components)
+		const playerButton_3PlayerController = PlayerController.getComponent(playerButton_3);
+		playerButton_3PlayerController.direction = "down";
+
+		// playerButton_4 (components)
+		const playerButton_4PlayerController = PlayerController.getComponent(playerButton_4);
+		playerButton_4PlayerController.direction = "space";
 
 		this.indicationNiveau = indicationNiveau;
 		this.liste_entite = liste_entite;

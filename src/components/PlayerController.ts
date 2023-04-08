@@ -25,7 +25,7 @@ export default class PlayerController extends UserComponent {
 		if (this.direction === "left" || "right" || "up" || "down") {
 			this.gameObject.on('pointerup', function (this: any) {
 				// this.scene[this.direction + 'Down'] = false;
-				console.log("DOWN");
+				console.log(this.direction);
 				
 			}, this);
 

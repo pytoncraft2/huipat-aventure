@@ -56,76 +56,84 @@
             "list": []
         },
         {
-            "prefabId": "38daeb1a-3a45-4557-b6ff-9a0e964d449b",
-            "id": "fb5eac47-1eea-4190-9b99-94398bf62a89",
+            "prefabId": "4ae7e16a-541c-4f3e-84b6-6b8e81cd667b",
+            "id": "72dc222a-d2e8-464f-9526-ebd50e7faea0",
+            "unlock": [
+                "x",
+                "y",
+                "texture",
+                "PlayerController.direction"
+            ],
+            "label": "playerButton",
+            "components": [],
+            "PlayerController.direction": "left",
+            "texture": {
+                "key": "ui",
+                "frame": "btn-left"
+            },
+            "x": 193,
+            "y": 797
+        },
+        {
+            "prefabId": "4ae7e16a-541c-4f3e-84b6-6b8e81cd667b",
+            "id": "ff33d74d-3710-4f00-9c19-5327cc568fcf",
+            "unlock": [
+                "x",
+                "y",
+                "texture",
+                "PlayerController.direction"
+            ],
+            "label": "playerButton_1",
+            "components": [],
+            "PlayerController.direction": "right",
+            "texture": {
+                "key": "ui",
+                "frame": "btn-right"
+            },
+            "x": 489,
+            "y": 797
+        },
+        {
+            "prefabId": "4ae7e16a-541c-4f3e-84b6-6b8e81cd667b",
+            "id": "a980ec46-ecf4-4490-b60e-180286c963b5",
             "unlock": [
                 "x",
                 "y"
             ],
-            "label": "rectangle_1",
+            "label": "playerButton_2",
             "components": [],
-            "x": 42,
-            "y": 788
+            "x": 1730.5,
+            "y": 486
         },
         {
-            "type": "Ellipse",
-            "id": "da8a8269-0e3a-4e09-9e5e-badc2ae3a2ee",
-            "label": "rectangle_3",
+            "prefabId": "4ae7e16a-541c-4f3e-84b6-6b8e81cd667b",
+            "id": "643de4e6-86e4-4964-8e74-d9b3d9a4074a",
+            "unlock": [
+                "x",
+                "y",
+                "angle",
+                "PlayerController.direction"
+            ],
+            "label": "playerButton_3",
             "components": [],
-            "x": 314,
-            "y": 788,
-            "scaleX": 1.8150359184173324,
-            "scaleY": 1.8150359184173324,
-            "originX": 0,
-            "alpha": 0.3,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Ellipse",
-            "id": "8f07448b-b7c2-423c-a67f-3ac75dcac548",
-            "label": "rectangle_4",
-            "components": [],
-            "x": 1613,
-            "y": 510,
-            "scaleX": 1.8150359184173324,
-            "scaleY": 1.8150359184173324,
-            "originX": 0,
-            "alpha": 0.3,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
-        },
-        {
-            "type": "Ellipse",
-            "id": "63af38b8-bc31-4d7f-91e0-8531163fcc93",
-            "label": "rectangle_5",
-            "components": [],
-            "x": 1613,
+            "PlayerController.direction": "down",
+            "x": 1730.5,
             "y": 782,
-            "scaleX": 1.8150359184173324,
-            "scaleY": 1.8150359184173324,
-            "originX": 0,
-            "alpha": 0.3,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
+            "angle": -180
         },
         {
-            "type": "Ellipse",
-            "id": "8f921076-ccc6-4daf-83b6-31d887208267",
-            "label": "rectangle",
+            "prefabId": "4ae7e16a-541c-4f3e-84b6-6b8e81cd667b",
+            "id": "96ca1d22-0c1b-4bfc-ab0e-96bbbc1df138",
+            "unlock": [
+                "x",
+                "y",
+                "PlayerController.direction"
+            ],
+            "label": "playerButton_4",
             "components": [],
-            "x": 1379,
-            "y": 645,
-            "scaleX": 1.8150359184173324,
-            "scaleY": 1.8150359184173324,
-            "originX": 0,
-            "alpha": 0.3,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
+            "PlayerController.direction": "space",
+            "x": 1470,
+            "y": 631
         }
     ],
     "plainObjects": [

@@ -1,5 +1,5 @@
 {
-    "id": "38daeb1a-3a45-4557-b6ff-9a0e964d449b",
+    "id": "4ae7e16a-541c-4f3e-84b6-6b8e81cd667b",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -13,19 +13,25 @@
     },
     "displayList": [
         {
-            "type": "Ellipse",
-            "id": "400f661a-8dd7-4c9a-b3bb-a5f5a58f4ac3",
-            "label": "rectangle_1",
+            "type": "Image",
+            "id": "342cd136-bcd8-46d8-8e60-62b6d2f022c0",
+            "label": "btn_up",
             "components": [
+                "ScrollFactor",
                 "PlayerController"
             ],
-            "scaleX": 1.8150359184173324,
-            "scaleY": 1.8150359184173324,
-            "originX": 0,
-            "alpha": 0.3,
-            "isFilled": true,
-            "width": 128,
-            "height": 128
+            "PlayerController.direction": "up",
+            "texture": {
+                "key": "ui",
+                "frame": "btn-up"
+            },
+            "scaleX": 1.6,
+            "scaleY": 1.6,
+            "alpha": 0.2,
+            "alphaTopLeft": 0.2,
+            "alphaTopRight": 0.2,
+            "alphaBottomLeft": 0.2,
+            "alphaBottomRight": 0.2
         }
     ],
     "plainObjects": [],
