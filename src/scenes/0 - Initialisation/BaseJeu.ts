@@ -23,7 +23,7 @@ export default class BaseJeu extends Phaser.Scene {
 		const liste_entite = this.add.layer();
 
 		// entite
-		const entite = new Entite(this, 355, -65);
+		const entite = new Entite(this, 1101, -65);
 		liste_entite.add(entite);
 
 		// liste_platformes

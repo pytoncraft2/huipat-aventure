@@ -5,6 +5,7 @@
 
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
+import { Aptitudes } from "./Aptitudes/_base"
 /* END-USER-IMPORTS */
 
 export default interface Entite {
@@ -21,15 +22,31 @@ export default class Entite extends Phaser.GameObjects.Sprite {
 		this.body.setSize(200, 189, false);
 
 		/* START-USER-CTR-CODE */
+		console.log(Aptitudes);
+		
 		this.body.setSize(this.displayWidth, this.displayHeight);
-		const r = this.scene.textures.get('liste_atlas')
-		console.log(r);
+		const r = this.scene.textures.get('liste_atlas');
+		const t = ['girl', 'spider', 'boy', 'huipat'];
+		let compte = 1;
+		
+		this.setInteractive().on('pointerdown', () => {
+			if (compte == t.length ) {
+				compte = 0;				
+			}
+			
+			const res: any = Object.keys(r.frames).find((el: any, idx:any) => el.startsWith(t[compte]));
+			this.setTexture('liste_atlas').setFrame(res);
+			compte += 1;
+			this.body.setSize(this.displayWidth, this.displayHeight);
+		});
 		/* END-USER-CTR-CODE */
 	}
 
 	/* START-USER-CODE */
 	preUpdate() {
 		//console.log(this);
+    //    if (space) t[compte] in Aptitudes && typeof Aptitudes[t[compte]].toucheEspace === "function" && Aptitudes[this.currentTarget.sprite].toucheEspace(this.currentTarget, input);
+
 	}
 	/* END-USER-CODE */
 }

@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "es2016",
-		"module": "es6",
+		"module": "esnext",
 		"strict": true,
 		"noEmit": false,
 		"importHelpers": true,
@@ -17,6 +17,10 @@
 		"typeRoots": [
 			"node_modules/@types",
 			"node_module/phaser/types"
+		],
+		"lib": [
+			"es2018",
+			"dom"
 		],
 		"types": [
 			"phaser"
