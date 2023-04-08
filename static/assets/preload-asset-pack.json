@@ -76,6 +76,25 @@
                 "url": "assets/toile.png",
                 "type": "image",
                 "key": "toile"
+            },
+            {
+                "url": "assets/atlas/ui.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "ui"
+            },
+            {
+                "atlasURL": "assets/atlas/ui.json",
+                "textureURL": "assets/atlas/ui.png",
+                "type": "atlas",
+                "key": "ui_1"
             }
         ]
     },
