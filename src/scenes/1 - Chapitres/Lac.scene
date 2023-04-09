@@ -80,8 +80,8 @@
                     "label": "entite",
                     "components": [],
                     "texture": {
-                        "key": "liste_atlas",
-                        "frame": "girl_run03.png"
+                        "key": "fille",
+                        "frame": "RunRight01.png"
                     },
                     "x": 866,
                     "y": 531
@@ -97,8 +97,8 @@
                     "label": "entite_1",
                     "components": [],
                     "texture": {
-                        "key": "liste_atlas",
-                        "frame": "boy_idle1.png"
+                        "key": "fille",
+                        "frame": "RunRight01.png"
                     },
                     "x": 1225,
                     "y": 530
@@ -114,8 +114,8 @@
                     "label": "entite_2",
                     "components": [],
                     "texture": {
-                        "key": "liste_atlas",
-                        "frame": "spider_run.png"
+                        "key": "araigne",
+                        "frame": "araigne.png"
                     },
                     "x": 1725,
                     "y": 566
@@ -131,8 +131,8 @@
                     "label": "entite_3",
                     "components": [],
                     "texture": {
-                        "key": "liste_atlas",
-                        "frame": "spider_run.png"
+                        "key": "araigne",
+                        "frame": "araigne.png"
                     },
                     "x": 1060,
                     "y": 745

@@ -1,3 +1,3 @@
-export function toucheEspace__SPACE(araigne: any, input?: any) {
-  console.log("TOUCHE ESPACE CHAUVE SOURIS !!");
+export function toucheEspace__SPACE(entite: any, input?: any) {
+    entite.setAlpha(0.5)
 }

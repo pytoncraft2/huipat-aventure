@@ -43,7 +43,7 @@ export default class Hiver extends BaseJeu {
 		const entites = this.add.layer();
 
 		// entite
-		const entite = new Entite(this, 1199, 246, "liste_atlas", "chauve_run.png");
+		const entite = new Entite(this, 1199, 246, "chauve_souris", "chauve_souris.png");
 		entites.add(entite);
 
 		// text_1

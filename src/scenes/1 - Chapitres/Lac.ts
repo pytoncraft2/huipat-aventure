@@ -41,19 +41,19 @@ export default class Lac extends BaseJeu {
 		const entites = this.add.layer();
 
 		// entite
-		const entite = new Entite(this, 866, 531, "liste_atlas", "girl_run03.png");
+		const entite = new Entite(this, 866, 531, "fille", "RunRight01.png");
 		entites.add(entite);
 
 		// entite_1
-		const entite_1 = new Entite(this, 1225, 530, "liste_atlas", "boy_idle1.png");
+		const entite_1 = new Entite(this, 1225, 530, "fille", "RunRight01.png");
 		entites.add(entite_1);
 
 		// entite_2
-		const entite_2 = new Entite(this, 1725, 566, "liste_atlas", "spider_run.png");
+		const entite_2 = new Entite(this, 1725, 566, "araigne", "araigne.png");
 		entites.add(entite_2);
 
 		// entite_3
-		const entite_3 = new Entite(this, 1060, 745, "liste_atlas", "spider_run.png");
+		const entite_3 = new Entite(this, 1060, 745, "araigne", "araigne.png");
 		entites.add(entite_3);
 
 		this.platformes = platformes;

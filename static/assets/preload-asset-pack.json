@@ -61,12 +61,6 @@
                 "key": "huipat"
             },
             {
-                "atlasURL": "assets/liste_atlas.json",
-                "textureURL": "assets/liste_atlas.png",
-                "type": "atlas",
-                "key": "liste_atlas"
-            },
-            {
                 "url": "assets/toile.png",
                 "type": "image",
                 "key": "toile"

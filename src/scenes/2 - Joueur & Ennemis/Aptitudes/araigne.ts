@@ -1,10 +1,5 @@
-export function __StatsSupplementaire() {}
+import Entite from "../Entite";
 
-export function toucheEspace__SPACE(araigne: any, input?: any) {
-  console.log("TOUCHE ESPACE ARAIGNE !!");
-  
-  // if (input.a) {
-  //   input.a = false
-  //   console.log("SAUT SURPRISE");
-  // }
+export function toucheEspace__SPACE(araigne: Entite, input?: any) {
+  araigne.body.setVelocityY(-400);
 }

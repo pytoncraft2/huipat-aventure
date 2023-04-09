@@ -34,14 +34,22 @@ export default class Entite extends Phaser.GameObjects.Sprite {
 			this.setTexture(liste_joueur[index]);
 			compte++;
 			this.body.setSize(this.displayWidth, this.displayHeight);
+			// console.log(Aptitudes[this.texture.key].space(this, {}));
 		});
+		// console.log(this.texture.key);
+		// console.log(this);
+		
+		
 		/* END-USER-CTR-CODE */
 	}
 
 	/* START-USER-CODE */
 	preUpdate() {
 
-		// if (this.scene.space.isDown) Aptitudes['araigne'].SPACE(this, this.scene.space.isDown);
+		if (this.scene.space.isDown) {
+			Aptitudes?.[this.texture.key]?.SPACE(this, this.scene.space.isDown);
+		}
+		// Aptitudes[this.texture.key].SPACE(this, this.scene.space.isDown);
 
     //    if (space) t[compte] in Aptitudes && typeof Aptitudes[t[compte]].toucheEspace === "function" && Aptitudes[this.currentTarget.sprite].toucheEspace(this.currentTarget, input);
 

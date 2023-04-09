@@ -80,8 +80,8 @@
                     "label": "entite",
                     "components": [],
                     "texture": {
-                        "key": "liste_atlas",
-                        "frame": "chauve_run.png"
+                        "key": "chauve_souris",
+                        "frame": "chauve_souris.png"
                     },
                     "x": 1199,
                     "y": 246

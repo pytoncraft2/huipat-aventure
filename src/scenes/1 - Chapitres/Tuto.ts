@@ -53,11 +53,11 @@ export default class Tuto extends BaseJeu {
 		const entites = this.add.layer();
 
 		// entite
-		const entite = new Entite(this, 960, 200, "liste_atlas", "spider_run.png");
+		const entite = new Entite(this, 960, 200, "araigne", "araigne.png");
 		entites.add(entite);
 
 		// entite_1
-		const entite_1 = new Entite(this, 1344, 200, "liste_atlas", "spider_run.png");
+		const entite_1 = new Entite(this, 1344, 200, "araigne", "araigne.png");
 		entites.add(entite_1);
 
 		// tuto (components)
