@@ -12,7 +12,6 @@ import BaseJeu from "../0 - Initialisation/BaseJeu";
 export default interface Entite {
 
 	 body: Phaser.Physics.Arcade.Body;
-	 scene: BaseJeu;
 }
 
 export default class Entite extends Phaser.GameObjects.Sprite {
@@ -22,6 +21,8 @@ export default class Entite extends Phaser.GameObjects.Sprite {
 
 		scene.physics.add.existing(this, false);
 		this.body.setSize(200, 189, false);
+		// awake handler
+		this.scene.events.once("scene-awake", () => this.awake());
 
 		/* START-USER-CTR-CODE */
 		const liste_joueur = Object.keys(Aptitudes);
@@ -38,17 +39,40 @@ export default class Entite extends Phaser.GameObjects.Sprite {
 		});
 		// console.log(this.texture.key);
 		// console.log(this);
-		
-		
+
+		console.log("oooooooooooooooo",(this.scene as BaseJeu).valeursClavier);
+        const nombreAleatoire = `${(Math.random() + 1).toString(36).substring(7)}`;
+
+		this.id = nombreAleatoire;
+		(this.scene as BaseJeu).valeursClavier[nombreAleatoire] = {
+			clavier: {
+				space: true,
+			},
+			// sprite: `${options.sprite}`
+		}
+		// console.log("mes infos: ",(this.scene as BaseJeu).valeursClavier);
+
+
+
 		/* END-USER-CTR-CODE */
 	}
 
-	/* START-USER-CODE */
-	preUpdate() {
+	public id: string = "";
 
-		if (this.scene.space.isDown) {
-			Aptitudes?.[this.texture.key]?.SPACE(this, this.scene.space.isDown);
-		}
+	/* START-USER-CODE */
+	awake() {
+		// console.log("oooooooooooooooo",(this.scene as BaseJeu).valeursClavier);
+	}
+	preUpdate() {
+     const input = (this.scene as BaseJeu).valeursClavier[this.id].clavier
+     let { space } = input
+	 console.log(space);
+	 
+		// if (this.scene.space.isDown) {
+			// console.log("SCENE SPACE!!", this.texture.key);
+
+			// Aptitudes?.[this.texture.key]?.SPACE(this, this.scene.space.isDown);
+		// }
 		// Aptitudes[this.texture.key].SPACE(this, this.scene.space.isDown);
 
     //    if (space) t[compte] in Aptitudes && typeof Aptitudes[t[compte]].toucheEspace === "function" && Aptitudes[this.currentTarget.sprite].toucheEspace(this.currentTarget, input);

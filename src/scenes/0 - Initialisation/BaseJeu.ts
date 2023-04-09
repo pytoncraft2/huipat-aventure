@@ -88,6 +88,14 @@ export default class BaseJeu extends Phaser.Scene {
 	public space!: Phaser.Input.Keyboard.Key;
 
 	/* START-USER-CODE */
+	public valeursClavier: {
+		[personnage:string]: {
+			clavier: {
+				space: boolean 
+			}
+		}
+	} = {}
+
 
 	// Write your code here
 	create() {
@@ -107,6 +115,20 @@ export default class BaseJeu extends Phaser.Scene {
 		this.cameras.main.once(Phaser.Cameras.Scene2D.Events.FADE_OUT_COMPLETE, (cam: any, effect: any) => {
 			this.scene.start(cleScene)
 		})
+	}
+
+	update(time: number, delta: number): void {
+			// const inputs = {
+			// 	space: this.space.isDown ? true : false,
+			// }
+			console.log(this.valeursClavier);
+			
+			// this.valeursClavier['huipat'].clavier = inputs
+
+			// console.log(inputs);
+			
+		console.log("UPDATE BASE");
+		
 	}
 
 	/* END-USER-CODE */
