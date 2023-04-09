@@ -3,7 +3,7 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
+import BaseEntite from "./BaseEntite";
 /* START-USER-IMPORTS */
 import { Aptitudes } from "./Aptitudes/_autoImport"
 import BaseJeu from "../0 - Initialisation/BaseJeu";
@@ -14,10 +14,10 @@ export default interface Entite {
 	 body: Phaser.Physics.Arcade.Body;
 }
 
-export default class Entite extends Phaser.GameObjects.Sprite {
+export default class Entite extends BaseEntite {
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
-		super(scene, x ?? 0, y ?? 0, texture || "huipat", frame ?? "huipat.png");
+		super(scene, x ?? 21, y ?? -1, texture || "huipat", frame ?? "huipat.png");
 
 		scene.physics.add.existing(this, false);
 		this.body.setSize(200, 189, false);
@@ -27,29 +27,29 @@ export default class Entite extends Phaser.GameObjects.Sprite {
 		/* START-USER-CTR-CODE */
 		const liste_joueur = Object.keys(Aptitudes);
 
-		this.body.setSize(this.displayWidth, this.displayHeight);
+		// this.body.setSize(this.displayWidth, this.displayHeight);
 
 		let compte = 0;
-		this.setInteractive().on('pointerdown', () => {
-			let index = compte % liste_joueur.length;
-			this.setTexture(liste_joueur[index]);
-			compte++;
-			this.body.setSize(this.displayWidth, this.displayHeight);
-			// console.log(Aptitudes[this.texture.key].space(this, {}));
-		});
+		// this.setInteractive().on('pointerdown', () => {
+		// 	let index = compte % liste_joueur.length;
+		// 	this.setTexture(liste_joueur[index]);
+		// 	compte++;
+		// 	this.body.setSize(this.displayWidth, this.displayHeight);
+		// 	// console.log(Aptitudes[this.texture.key].space(this, {}));
+		// });
 		// console.log(this.texture.key);
 		// console.log(this);
 
-		console.log("oooooooooooooooo",(this.scene as BaseJeu).valeursClavier);
+		// console.log("oooooooooooooooo",(this.scene as BaseJeu).valeursClavier);
         const nombreAleatoire = `${(Math.random() + 1).toString(36).substring(7)}`;
 
 		this.id = nombreAleatoire;
-		(this.scene as BaseJeu).valeursClavier[nombreAleatoire] = {
-			clavier: {
-				space: true,
-			},
-			// sprite: `${options.sprite}`
-		}
+		// (this.scene as BaseJeu).valeursClavier[nombreAleatoire] = {
+		// 	clavier: {
+		// 		space: true,
+		// 	},
+		// 	// sprite: `${options.sprite}`
+		// }
 		// console.log("mes infos: ",(this.scene as BaseJeu).valeursClavier);
 
 
@@ -64,10 +64,10 @@ export default class Entite extends Phaser.GameObjects.Sprite {
 		// console.log("oooooooooooooooo",(this.scene as BaseJeu).valeursClavier);
 	}
 	preUpdate() {
-     const input = (this.scene as BaseJeu).valeursClavier[this.id].clavier
-     let { space } = input
-	 console.log(space);
-	 
+    //  const input = (this.scene as BaseJeu).valeursClavier[this.id].clavier
+    //  let { space } = input
+	//  console.log(space);
+
 		// if (this.scene.space.isDown) {
 			// console.log("SCENE SPACE!!", this.texture.key);
 

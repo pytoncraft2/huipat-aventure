@@ -5,7 +5,6 @@
 
 import Phaser from "phaser";
 import IndicationNiveau from "../3 - Utilitaires/IndicationNiveau";
-import Entite from "../2 - Joueur & Ennemis/Entite";
 import PlayerButton from "../3 - Utilitaires/PlayerButton";
 import PlayerController from "../../components/PlayerController";
 /* START-USER-IMPORTS */
@@ -24,10 +23,6 @@ export default class BaseJeu extends Phaser.Scene {
 
 		// liste_entite
 		const liste_entite = this.add.layer();
-
-		// entite
-		const entite = new Entite(this, 1101, -65);
-		liste_entite.add(entite);
 
 		// liste_platformes
 		const liste_platformes = this.add.layer();
@@ -122,13 +117,13 @@ export default class BaseJeu extends Phaser.Scene {
 			// 	space: this.space.isDown ? true : false,
 			// }
 			console.log(this.valeursClavier);
-			
+
 			// this.valeursClavier['huipat'].clavier = inputs
 
 			// console.log(inputs);
-			
+
 		console.log("UPDATE BASE");
-		
+
 	}
 
 	/* END-USER-CODE */

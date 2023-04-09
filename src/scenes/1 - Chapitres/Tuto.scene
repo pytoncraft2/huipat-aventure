@@ -100,37 +100,15 @@
             "list": [
                 {
                     "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-                    "id": "d632f78d-ef1c-4a40-9a86-48a98720200c",
+                    "id": "ca5cc71a-b646-481a-b4ab-de18032f835a",
                     "unlock": [
                         "x",
-                        "y",
-                        "texture"
+                        "y"
                     ],
                     "label": "entite",
                     "components": [],
-                    "texture": {
-                        "key": "araigne",
-                        "frame": "araigne.png"
-                    },
-                    "x": 960,
-                    "y": 200
-                },
-                {
-                    "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-                    "id": "59adcd60-b7c0-4336-a089-cd02be21a782",
-                    "unlock": [
-                        "x",
-                        "y",
-                        "texture"
-                    ],
-                    "label": "entite_1",
-                    "components": [],
-                    "texture": {
-                        "key": "araigne",
-                        "frame": "araigne.png"
-                    },
-                    "x": 1344,
-                    "y": 200
+                    "x": 496,
+                    "y": 174
                 }
             ]
         }

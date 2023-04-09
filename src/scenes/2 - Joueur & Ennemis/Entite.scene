@@ -5,6 +5,7 @@
         "exportClass": true,
         "autoImport": true,
         "generateAwakeHandler": true,
+        "superClassName": "BaseEntite",
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",
@@ -22,6 +23,8 @@
                 "key": "huipat",
                 "frame": "huipat.png"
             },
+            "x": 21,
+            "y": -1,
             "ArcadeComponent.active": true,
             "body.width": 200,
             "body.height": 189
