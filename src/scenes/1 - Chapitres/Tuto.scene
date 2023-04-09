@@ -97,7 +97,36 @@
             "label": "entites",
             "scope": "PUBLIC",
             "components": [],
-            "list": []
+            "list": [
+                {
+                    "prefabId": "4cd86594-6a9f-44a3-82ff-f825381067b8",
+                    "id": "7b8079c9-9942-415a-8a71-00ec2d819ef7",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "huipat",
+                    "components": [],
+                    "x": 960,
+                    "y": 200,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "9127a051-aa78-489e-9d24-8f8e22d8b686",
+                    "id": "ff69f83b-8501-4b8c-a919-00311e5a6562",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "araigne",
+                    "components": [],
+                    "x": 303,
+                    "y": 139,
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         }
     ],
     "plainObjects": [],

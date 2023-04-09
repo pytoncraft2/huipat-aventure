@@ -1,5 +1,5 @@
 {
-    "id": "3713e431-7b7e-4360-ab71-50eb5442fefd",
+    "id": "4cd86594-6a9f-44a3-82ff-f825381067b8",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -13,16 +13,60 @@
     },
     "displayList": [
         {
-            "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-            "id": "8c308d84-2d33-463a-b24b-d6fbb256a53b",
-            "unlock": [
-                "x",
-                "y"
-            ],
-            "label": "entite",
+            "type": "Container",
+            "id": "d6872036-c102-456c-b31f-f3ad0cce5794",
+            "label": "container_1",
             "components": [],
-            "x": 138,
-            "y": 122
+            "x": 119,
+            "y": 73,
+            "ArcadeComponent.active": true,
+            "body.width": 64,
+            "body.height": 64,
+            "list": [
+                {
+                    "prefabId": "600950fc-5788-4119-bb4c-6ba01a6dd45d",
+                    "id": "c9ef5119-23bc-4a69-a69a-8e9957d28475",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseTouteEntite",
+                    "scope": "NESTED_PREFAB",
+                    "components": [],
+                    "x": 0,
+                    "y": 18
+                },
+                {
+                    "prefabId": "1ec54af4-b208-4b28-b786-8b30231359b5",
+                    "id": "cc24c770-4bda-4f1f-aa15-d3077bf47469",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseDetecteurs",
+                    "scope": "NESTED_PREFAB",
+                    "components": [],
+                    "x": 9,
+                    "y": 8,
+                    "nestedPrefabs": [],
+                    "list": []
+                },
+                {
+                    "prefabId": "1ec54af4-b208-4b28-b786-8b30231359b5",
+                    "id": "05bf8530-f5c2-44a9-923b-60031bcf15e1",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseDetecteurs_1",
+                    "scope": "NESTED_PREFAB",
+                    "components": [],
+                    "x": 171,
+                    "y": 12,
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         }
     ],
     "plainObjects": [],

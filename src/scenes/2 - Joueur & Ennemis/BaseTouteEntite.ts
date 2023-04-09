@@ -3,14 +3,14 @@
 
 /* START OF COMPILED CODE */
 
-import Entite from "./Entite";
+import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class Fille extends Entite {
+export default class BaseTouteEntite extends Phaser.GameObjects.Sprite {
 
 	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
-		super(scene, x ?? 81, y ?? 77, texture || "fille", frame ?? "RunRight01.png");
+		super(scene, x ?? 192, y ?? 176, texture || "huipat", frame ?? "huipat.png");
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

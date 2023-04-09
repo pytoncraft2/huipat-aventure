@@ -1,5 +1,5 @@
 {
-    "id": "c6915bd5-cc0e-46aa-a9eb-3051ac504081",
+    "id": "9127a051-aa78-489e-9d24-8f8e22d8b686",
     "sceneType": "PREFAB",
     "settings": {
         "exportClass": true,
@@ -13,21 +13,48 @@
     },
     "displayList": [
         {
-            "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-            "id": "adee3a3e-cb72-4f35-bee4-69d7b47a7b4a",
-            "unlock": [
-                "x",
-                "y",
-                "texture"
-            ],
-            "label": "entite",
+            "type": "Container",
+            "id": "d03d5a98-3060-426a-8dab-b6c954087e87",
+            "label": "container_1",
             "components": [],
-            "texture": {
-                "key": "araigne",
-                "frame": "araigne.png"
-            },
-            "x": 132,
-            "y": 59
+            "x": 137,
+            "y": 35,
+            "ArcadeComponent.active": true,
+            "body.width": 64,
+            "body.height": 64,
+            "list": [
+                {
+                    "prefabId": "600950fc-5788-4119-bb4c-6ba01a6dd45d",
+                    "id": "42a161f2-02cf-4710-a38c-0079a45d46a9",
+                    "unlock": [
+                        "x",
+                        "y",
+                        "texture"
+                    ],
+                    "label": "baseTouteEntite",
+                    "components": [],
+                    "texture": {
+                        "key": "araigne",
+                        "frame": "araigne.png"
+                    },
+                    "x": 0,
+                    "y": 28
+                },
+                {
+                    "prefabId": "1ec54af4-b208-4b28-b786-8b30231359b5",
+                    "id": "64027f3b-bbfb-4d4d-8811-a8954255b7b2",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "baseDetecteurs",
+                    "components": [],
+                    "x": 110,
+                    "y": 1,
+                    "nestedPrefabs": [],
+                    "list": []
+                }
+            ]
         }
     ],
     "plainObjects": [],
