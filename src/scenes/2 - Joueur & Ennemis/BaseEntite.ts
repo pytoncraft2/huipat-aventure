@@ -11,8 +11,15 @@ export default class BaseEntite extends Phaser.GameObjects.Sprite {
 
 	editorCreate(): void {
 
+		// lists
+		const list: Array<any> = [];
+
+		this.list = list;
+
 		this.events.emit("scene-awake");
 	}
+
+	private list!: Array<any>;
 
 	/* START-USER-CODE */
 	events!: Phaser.Events.EventEmitter

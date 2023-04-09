@@ -21,8 +21,6 @@ export default class Entite extends BaseEntite {
 
 		scene.physics.add.existing(this, false);
 		this.body.setSize(200, 189, false);
-		// awake handler
-		this.scene.events.once("scene-awake", () => this.awake());
 
 		/* START-USER-CTR-CODE */
 		const liste_joueur = Object.keys(Aptitudes);

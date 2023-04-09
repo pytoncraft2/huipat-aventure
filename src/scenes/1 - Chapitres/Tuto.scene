@@ -109,6 +109,18 @@
                     "components": [],
                     "x": 496,
                     "y": 174
+                },
+                {
+                    "prefabId": "c6915bd5-cc0e-46aa-a9eb-3051ac504081",
+                    "id": "fc77c8c3-c3b9-40c8-992d-ca800a66df02",
+                    "unlock": [
+                        "x",
+                        "y"
+                    ],
+                    "label": "araigne",
+                    "components": [],
+                    "x": 1152,
+                    "y": 200
                 }
             ]
         }
