@@ -39,7 +39,7 @@ export default class Huipat extends Phaser.GameObjects.Container {
 		this.baseDetecteurs_1 = baseDetecteurs_1;
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+		console.log(this.actionGlobal());
 		/* END-USER-CTR-CODE */
 	}
 
@@ -48,8 +48,6 @@ export default class Huipat extends Phaser.GameObjects.Container {
 	public baseDetecteurs_1: BaseDetecteurs;
 
 	/* START-USER-CODE */
-
-	// Write your code here.
 
 	/* END-USER-CODE */
 }

@@ -18,9 +18,9 @@ export default class BaseTouteEntite extends Phaser.GameObjects.Sprite {
 	}
 
 	/* START-USER-CODE */
-
-	// Write your code here.
-
+	actionGlobal() {
+		console.log("ACTION GLOBAL");
+	}
 	/* END-USER-CODE */
 }
 
