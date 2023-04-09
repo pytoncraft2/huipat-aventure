@@ -20,6 +20,12 @@ export default class BaseTouteEntite extends Phaser.GameObjects.Container {
 		scene.physics.add.existing(this, false);
 		this.body.setSize(64, 64, false);
 
+		// huipat_png
+		const huipat_png = scene.add.image(-83, -28, "huipat", "huipat.png") as Phaser.GameObjects.Image & { body: Phaser.Physics.Arcade.Body };
+		scene.physics.add.existing(huipat_png, false);
+		huipat_png.body.setSize(162, 178, false);
+		this.add(huipat_png);
+
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
@@ -28,6 +34,14 @@ export default class BaseTouteEntite extends Phaser.GameObjects.Container {
 	/* START-USER-CODE */
 	actionGlobal() {
 		console.log("ACTION GLOBAL");
+	}
+
+	droite() {
+		this.body.setVelocityX(40);
+	}
+
+	gauche() {
+		this.body.setVelocityX(-40);
 	}
 	/* END-USER-CODE */
 }

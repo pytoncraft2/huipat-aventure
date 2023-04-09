@@ -22,7 +22,23 @@
             "ArcadeComponent.active": true,
             "body.width": 64,
             "body.height": 64,
-            "list": []
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "866ff49d-33c2-4a12-a79f-c66dfbf0b3fb",
+                    "label": "huipat_png",
+                    "components": [],
+                    "texture": {
+                        "key": "huipat",
+                        "frame": "huipat.png"
+                    },
+                    "x": -83,
+                    "y": -28,
+                    "ArcadeComponent.active": true,
+                    "body.width": 162,
+                    "body.height": 178
+                }
+            ]
         }
     ],
     "plainObjects": [],

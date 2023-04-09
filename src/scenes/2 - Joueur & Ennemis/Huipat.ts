@@ -41,7 +41,11 @@ export default class Huipat extends BaseTouteEntite {
 	public baseDetecteurs_1: BaseDetecteurs;
 
 	/* START-USER-CODE */
+	preUpdate() {
+		console.log("PRE UPD");
 
+		this.droite()
+	}
 	/* END-USER-CODE */
 }
 

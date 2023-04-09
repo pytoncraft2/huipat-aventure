@@ -20,6 +20,9 @@
             "components": [],
             "x": 129,
             "y": 53,
+            "ArcadeComponent.active": true,
+            "body.width": 64,
+            "body.height": 64,
             "list": [
                 {
                     "type": "Image",
