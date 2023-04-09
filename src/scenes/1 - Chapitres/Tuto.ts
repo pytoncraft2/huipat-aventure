@@ -8,8 +8,6 @@ import InfosScene from "../3 - Utilitaires/InfosScene";
 import InteractiveObjet from "../../components/InteractiveObjet";
 import CommencerSceneAuClique from "../../components/CommencerSceneAuClique";
 import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
-import Entite from "../2 - Joueur & Ennemis/Entite";
-import Araigne from "../2 - Joueur & Ennemis/Araigne";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -52,14 +50,6 @@ export default class Tuto extends BaseJeu {
 
 		// entites
 		const entites = this.add.layer();
-
-		// entite
-		const entite = new Entite(this, 496, 174);
-		entites.add(entite);
-
-		// araigne
-		const araigne = new Araigne(this, 1152, 200);
-		entites.add(araigne);
 
 		// tuto (components)
 		new InteractiveObjet(tuto);

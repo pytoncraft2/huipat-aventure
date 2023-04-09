@@ -97,32 +97,7 @@
             "label": "entites",
             "scope": "PUBLIC",
             "components": [],
-            "list": [
-                {
-                    "prefabId": "184c0773-11c2-4f45-aa9c-1c3f5ab2f334",
-                    "id": "ca5cc71a-b646-481a-b4ab-de18032f835a",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "entite",
-                    "components": [],
-                    "x": 496,
-                    "y": 174
-                },
-                {
-                    "prefabId": "c6915bd5-cc0e-46aa-a9eb-3051ac504081",
-                    "id": "fc77c8c3-c3b9-40c8-992d-ca800a66df02",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "araigne",
-                    "components": [],
-                    "x": 1152,
-                    "y": 200
-                }
-            ]
+            "list": []
         }
     ],
     "plainObjects": [],
