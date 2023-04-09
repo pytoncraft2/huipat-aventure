@@ -116,13 +116,10 @@ export default class BaseJeu extends Phaser.Scene {
 			// const inputs = {
 			// 	space: this.space.isDown ? true : false,
 			// }
-			console.log(this.valeursClavier);
 
 			// this.valeursClavier['huipat'].clavier = inputs
 
 			// console.log(inputs);
-
-		console.log("UPDATE BASE");
 
 	}
 
