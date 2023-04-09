@@ -5,7 +5,7 @@
 
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
-import { Aptitudes } from "./Aptitudes/_base"
+import { Aptitudes } from "./Aptitudes/_autoImport"
 import BaseJeu from "../0 - Initialisation/BaseJeu";
 /* END-USER-IMPORTS */
 

@@ -35,7 +35,7 @@ window.addEventListener('load', function () {
             default: 'arcade',
             arcade: {
                 gravity: { y: 900 },
-                debug: false
+                debug: true
             }
         },
         scale: {
