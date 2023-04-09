@@ -8,8 +8,8 @@ import InfosScene from "../3 - Utilitaires/InfosScene";
 import InteractiveObjet from "../../components/InteractiveObjet";
 import CommencerSceneAuClique from "../../components/CommencerSceneAuClique";
 import PlatformePrefab from "../3 - Utilitaires/PlatformePrefab";
-import Huipat from "../2 - Joueur & Ennemis/Huipat";
 import Araigne from "../2 - Joueur & Ennemis/Araigne";
+import Huipat from "../2 - Joueur & Ennemis/Huipat";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
@@ -53,13 +53,13 @@ export default class Tuto extends BaseJeu {
 		// entites
 		const entites = this.add.layer();
 
-		// huipat
-		const huipat = new Huipat(this, 960, 200);
-		entites.add(huipat);
-
 		// araigne
-		const araigne = new Araigne(this, 303, 139);
+		const araigne = new Araigne(this, 576, 200);
 		entites.add(araigne);
+
+		// huipat
+		const huipat = new Huipat(this, 1191, 232);
+		entites.add(huipat);
 
 		// tuto (components)
 		new InteractiveObjet(tuto);

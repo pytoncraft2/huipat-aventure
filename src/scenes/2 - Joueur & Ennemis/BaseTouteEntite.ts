@@ -7,10 +7,18 @@ import Phaser from "phaser";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class BaseTouteEntite extends Phaser.GameObjects.Sprite {
+export default interface BaseTouteEntite {
 
-	constructor(scene: Phaser.Scene, x?: number, y?: number, texture?: string, frame?: number | string) {
-		super(scene, x ?? 192, y ?? 176, texture || "huipat", frame ?? "huipat.png");
+	 body: Phaser.Physics.Arcade.Body;
+}
+
+export default class BaseTouteEntite extends Phaser.GameObjects.Container {
+
+	constructor(scene: Phaser.Scene, x?: number, y?: number) {
+		super(scene, x ?? 192, y ?? 153.96633260508813);
+
+		scene.physics.add.existing(this, false);
+		this.body.setSize(64, 64, false);
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.

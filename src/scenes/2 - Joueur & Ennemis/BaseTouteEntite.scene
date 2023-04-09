@@ -13,16 +13,16 @@
     },
     "displayList": [
         {
-            "type": "Sprite",
-            "id": "d74ecded-f38c-4490-80d1-e180024f1191",
-            "label": "huipat_png",
+            "type": "Container",
+            "id": "1ee01b60-7ec3-4016-8bc8-17242f27b829",
+            "label": "container_1",
             "components": [],
-            "texture": {
-                "key": "huipat",
-                "frame": "huipat.png"
-            },
             "x": 192,
-            "y": 176
+            "y": 153.96633260508813,
+            "ArcadeComponent.active": true,
+            "body.width": 64,
+            "body.height": 64,
+            "list": []
         }
     ],
     "plainObjects": [],

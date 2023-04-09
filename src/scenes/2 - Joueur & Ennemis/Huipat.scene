@@ -4,6 +4,7 @@
     "settings": {
         "exportClass": true,
         "autoImport": true,
+        "superClassName": "BaseTouteEntite",
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",
@@ -24,47 +25,35 @@
             "body.height": 64,
             "list": [
                 {
-                    "prefabId": "600950fc-5788-4119-bb4c-6ba01a6dd45d",
-                    "id": "c9ef5119-23bc-4a69-a69a-8e9957d28475",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseTouteEntite",
-                    "scope": "NESTED_PREFAB",
-                    "components": [],
-                    "x": 0,
-                    "y": 18
-                },
-                {
-                    "prefabId": "1ec54af4-b208-4b28-b786-8b30231359b5",
-                    "id": "cc24c770-4bda-4f1f-aa15-d3077bf47469",
-                    "unlock": [
-                        "x",
-                        "y"
-                    ],
-                    "label": "baseDetecteurs",
-                    "scope": "NESTED_PREFAB",
-                    "components": [],
-                    "x": 9,
-                    "y": 8,
-                    "nestedPrefabs": [],
-                    "list": []
-                },
-                {
                     "prefabId": "1ec54af4-b208-4b28-b786-8b30231359b5",
                     "id": "05bf8530-f5c2-44a9-923b-60031bcf15e1",
                     "unlock": [
                         "x",
-                        "y"
+                        "y",
+                        "scaleX",
+                        "scaleY"
                     ],
                     "label": "baseDetecteurs_1",
                     "scope": "NESTED_PREFAB",
                     "components": [],
-                    "x": 171,
-                    "y": 12,
+                    "x": 52,
+                    "y": 13,
+                    "scaleX": 1,
+                    "scaleY": 1,
                     "nestedPrefabs": [],
                     "list": []
+                },
+                {
+                    "type": "Image",
+                    "id": "ee298197-c4f2-476b-b2f8-22d3e6c46989",
+                    "label": "huipat_png",
+                    "components": [],
+                    "texture": {
+                        "key": "huipat",
+                        "frame": "huipat.png"
+                    },
+                    "x": -20,
+                    "y": 24
                 }
             ]
         }
