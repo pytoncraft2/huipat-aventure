@@ -6,11 +6,13 @@
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
 import { Aptitudes } from "./Aptitudes/_base"
+import BaseJeu from "../0 - Initialisation/BaseJeu";
 /* END-USER-IMPORTS */
 
 export default interface Entite {
 
 	 body: Phaser.Physics.Arcade.Body;
+	 scene: BaseJeu
 }
 
 export default class Entite extends Phaser.GameObjects.Sprite {
@@ -22,7 +24,7 @@ export default class Entite extends Phaser.GameObjects.Sprite {
 		this.body.setSize(200, 189, false);
 
 		/* START-USER-CTR-CODE */
-		console.log(Aptitudes);
+		console.log(frame);
 		
 		this.body.setSize(this.displayWidth, this.displayHeight);
 		const r = this.scene.textures.get('liste_atlas');
@@ -44,7 +46,9 @@ export default class Entite extends Phaser.GameObjects.Sprite {
 
 	/* START-USER-CODE */
 	preUpdate() {
-		//console.log(this);
+		
+		if (this.scene.space.isDown) Aptitudes['araigne'].SPACE(this, this.scene.space.isDown);
+		
     //    if (space) t[compte] in Aptitudes && typeof Aptitudes[t[compte]].toucheEspace === "function" && Aptitudes[this.currentTarget.sprite].toucheEspace(this.currentTarget, input);
 
 	}

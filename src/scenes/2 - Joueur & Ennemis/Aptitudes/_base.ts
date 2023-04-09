@@ -1,26 +1,9 @@
-const nomFichierCourant = "_base";
-
-export interface Touches {
-  [personnage:string]:{
-    StatsSupplementaire?: (joueur: any, Aptitudes: Touches) => void,
-    /** Activation fonction correspondant à la touche **A** */
-    A?: (joueur: Phaser.Physics.Arcade.Sprite, input: any) => void;
-    /** Activation fonction correspondant à la touche **Z** */
-    Z?: (joueur: Phaser.Physics.Arcade.Sprite, input: any) => void;
-    /** Activation fonction correspondant à la touche **E** */
-    E?: (joueur: Phaser.Physics.Arcade.Sprite, input: any) => void;
-    /** Activation fonction correspondant à la touche **R** */
-    R?: (joueur: Phaser.Physics.Arcade.Sprite, input: any) => void;
-    /** Activation fonction correspondant à la **TAB** */
-    TAB?: (joueur: Phaser.Physics.Arcade.Sprite, input: any) => void;
-    toucheGauche?: (joueur: any, input: any) => void;
-    toucheDroite?: (joueur: any, input: any) => void;
-    toucheHaut?: (joueur: any, input: any) => void;
-    toucheBas?: (joueur: any, input: any) => void;
-    toucheEspace?: (joueur: any, input: any) => void;
-    auto?(joueur: any, input: any, Aptitudes?: any): void;
+import Entite from "../Entite";
+type Touches = {
+  [personnage:string]: {
+    [toucheAction:string]: (joueur: Entite, input: any) => void
   }
-}
+};
 /**
  * Stockage des touches qui active les aptitudes du personnage
  *
@@ -60,8 +43,6 @@ export const Aptitudes: Touches = {};
 export const autoImport = ["araigne.ts", "huipat.ts"]
     .map(file => {
       import('./' + file).then((m) => {
-        if (file != nomFichierCourant)
-        {
           //le nom du fichier devient la clé pour l'objet (Aptitudes)
           const personnage = file.substring(0, file.lastIndexOf('.'))
           const Commandes = {};
@@ -80,15 +61,13 @@ export const autoImport = ["araigne.ts", "huipat.ts"]
             if (index != -1)
             {
               let CLE = fn.toString().split(' ')[1].substring(index+2).split('(')[0]
-              if (Aptitudes[personnage] === undefined) Aptitudes[personnage] = {}
+              if (Aptitudes[personnage] === undefined) (Aptitudes as any)[personnage] = {}
               //la CLE correspond au mot après l'underscord (example: Aptitudes['fakhear']['A'])
-              //@ts-ignore
-              Aptitudes[personnage][CLE] = fn;
+              const t: Touches = Aptitudes[personnage][CLE] = fn;
               //fn correspond à la fonction qui active l'aptitudes
             }
           })
           //Stoquages des commandes disponibles
         //   Aptitudes[personnage]["commandes"] = Commandes
-        }
       });
     });

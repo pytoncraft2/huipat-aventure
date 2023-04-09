@@ -144,6 +144,12 @@
             "scope": "PUBLIC",
             "object1": "liste_platformes.list",
             "object2": "liste_entite.list"
+        },
+        {
+            "id": "d36e76b4-7891-48a5-bb05-8a020c4dc6e9",
+            "type": "Keyboard.Key",
+            "label": "space",
+            "scope": "PUBLIC"
         }
     ],
     "meta": {

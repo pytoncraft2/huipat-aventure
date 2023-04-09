@@ -15,6 +15,9 @@ export default class BaseJeu extends Phaser.Scene {
 
 	initElementBase(): void {
 
+		// space
+		const space = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.SPACE);
+
 		// indicationNiveau
 		const indicationNiveau = new IndicationNiveau(this, -1, -1);
 		this.add.existing(indicationNiveau);
@@ -73,6 +76,7 @@ export default class BaseJeu extends Phaser.Scene {
 		this.liste_entite = liste_entite;
 		this.liste_platformes = liste_platformes;
 		this.colision_platformes_entites = colision_platformes_entites;
+		this.space = space;
 
 		this.events.emit("scene-awake");
 	}
@@ -81,6 +85,7 @@ export default class BaseJeu extends Phaser.Scene {
 	public liste_entite!: Phaser.GameObjects.Layer;
 	public liste_platformes!: Phaser.GameObjects.Layer;
 	public colision_platformes_entites!: Phaser.Physics.Arcade.Collider;
+	public space!: Phaser.Input.Keyboard.Key;
 
 	/* START-USER-CODE */
 
