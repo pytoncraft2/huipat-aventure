@@ -18,8 +18,8 @@
             "label": "entité",
             "components": [],
             "texture": {
-                "key": "liste_atlas",
-                "frame": "huipat_atlas.png"
+                "key": "huipat",
+                "frame": "huipat.png"
             },
             "ArcadeComponent.active": true,
             "body.width": 200,

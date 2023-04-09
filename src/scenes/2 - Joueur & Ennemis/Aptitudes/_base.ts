@@ -40,8 +40,12 @@ export const Aptitudes: Touches = {};
   * Aptitudes['fakhear']['commandes'] = { A: 'cross', Z: 'kick', E: 'dash', TAB: 'fusion' }
   * ```
   */
-export const autoImport = ["araigne.ts", "huipat.ts"]
-    .map(file => {
+export const autoImport = [
+  "araigne.ts",
+  "huipat.ts",
+  "fille.ts",
+  "chauve_souris.ts",
+].map(file => {
       import('./' + file).then((m) => {
           //le nom du fichier devient la clé pour l'objet (Aptitudes)
           const personnage = file.substring(0, file.lastIndexOf('.'))

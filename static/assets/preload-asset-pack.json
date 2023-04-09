@@ -7,6 +7,18 @@
                 "key": "animations"
             },
             {
+                "atlasURL": "assets/entites/araigne.json",
+                "textureURL": "assets/entites/araigne.png",
+                "type": "atlas",
+                "key": "araigne"
+            },
+            {
+                "atlasURL": "assets/entites/chauve_souris.json",
+                "textureURL": "assets/entites/chauve_souris.png",
+                "type": "atlas",
+                "key": "chauve_souris"
+            },
+            {
                 "url": "assets/interface-utilisateur/coeur.svg",
                 "svgConfig": {
                     "width": 0,
@@ -15,6 +27,12 @@
                 },
                 "type": "svg",
                 "key": "coeur"
+            },
+            {
+                "atlasURL": "assets/entites/fille.json",
+                "textureURL": "assets/entites/fille.png",
+                "type": "atlas",
+                "key": "fille"
             },
             {
                 "url": "assets/arriere-plans/fond.jpg",
@@ -35,6 +53,12 @@
                 "url": "assets/arriere-plans/fond4.jpg",
                 "type": "image",
                 "key": "fond4"
+            },
+            {
+                "atlasURL": "assets/entites/huipat.json",
+                "textureURL": "assets/entites/huipat.png",
+                "type": "atlas",
+                "key": "huipat"
             },
             {
                 "atlasURL": "assets/liste_atlas.json",
